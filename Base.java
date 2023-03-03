@@ -1,43 +1,29 @@
-package com.obsqura.maven.automationcourse;
+package com.obsqura.maven.Testngnew;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class Base {
 	public WebDriver driver;//for any web driver ,WebDriver is a an Interface.
-	//public ChromeDriver driver;//specific for chrome driver
 	//method for Initializing chrome browser.
+@BeforeMethod
+//@BeforeClass
 public void initializeBrowser() {
-	System.setProperty("webdriver.chrome.driver", "F:\\vini java\\Automationcourse\\src\\main\\java\\Resources\\chromedriver.exe");//string argument ,webdriver path
-	 driver=new ChromeDriver();//casting into 
-	 driver.get("https://www.amazon.ae/");//which site to be automated.
+	System.setProperty("webdriver.chrome.driver", "F:\\vini java\\Testngnew\\src\\main\\java\\Resources\\chromedriver.exe");//string argument ,webdriver path
+	 driver=new ChromeDriver();//casting into Chromedriver
+	 //driver.get("https://www.amazon.ae/");
+	 driver.get("https://selenium.obsqurazone.com/simple-form-demo.php");//which site to be automated.
+	 //driver.navigate().to("https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm");
+	 driver.manage().window().maximize();//to maximise the screen
 }
-public void titleCommands() {
-	String actualTitle="Welcome to Amazon.ae Shop Online in UAE for Electronics, Apparel, Computers, Grocery & more | Amazon.ae";
-	
-	String title=driver.getTitle();
-	if(actualTitle.equals(title))
-	{
-		System.out.println("Title is correct");
-	}
-	else
-		System.out.println("Title is not correct");
+@AfterMethod
+//@AfterClass
+public void driverQuit() {
+driver.quit();// close all windows associated with url,quits the  webdriver session
 }
-public void getUrlCommand() {
-	String url=driver.getCurrentUrl();
-	String actualUrl="https://www.amazon.ae/";
-	if (actualUrl.equals(url))
-	{
-		System.out.println("url same");
-	}
-	else
-		System.out.println("url not same");
-}
-	public static void main(String[] args) {
-		Base base=new Base();
-		base.initializeBrowser();
-		base.titleCommands();
-		base.getUrlCommand();
-	}
-
 }
