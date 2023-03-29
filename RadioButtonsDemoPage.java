@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import utilities.PageUtility;
+
 public class RadioButtonsDemoPage {
 public WebDriver driver;
 public RadioButtonsDemoPage(WebDriver driver) {
@@ -33,16 +35,23 @@ public WebElement showSelectedValueLabelElement() {
 
 
 public void selectFemaleRadioButton() {
-	femaleRadioButtonElement().click();
+	//femaleRadioButtonElement().click();
+	PageUtility.clickOnElement(femaleRadioButtonElement());
 }
 public boolean isEnabledShowSelectedValueButton() {
-	return showSelectedValueButtonElement().isEnabled();
+	//return showSelectedValueButtonElement().isEnabled();
+	PageUtility pageUtility=new PageUtility();
+	boolean status= pageUtility.isEnabled(showSelectedValueButtonElement());
+	return status;
 }
 public void showSelectedValueButtonClick() {
-	showSelectedValueButtonElement().click();
+	//showSelectedValueButtonElement().click();
+	PageUtility.clickOnElement(showSelectedValueButtonElement());
 }
 public String showSelectedValueLabelText() {
-	String showSelectedValueButtonText=showSelectedValueLabelElement().getText();
-	return showSelectedValueButtonText;
+	//String showSelectedValueButtonText=showSelectedValueLabelElement().getText();
+	PageUtility pageUtility=new PageUtility();
+	String showSelectedValueLabelText=pageUtility.getElementText(showSelectedValueLabelElement());
+	return showSelectedValueLabelText;
 }
 }

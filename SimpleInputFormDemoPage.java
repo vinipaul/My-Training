@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import utilities.PageUtility;
+
 public class SimpleInputFormDemoPage {
 	public WebDriver driver;
 	public SimpleInputFormDemoPage(WebDriver driver) {
@@ -29,7 +31,9 @@ public class SimpleInputFormDemoPage {
 	
 	
 	public void enterDataInSingleInputField(String inputString) {
-		SingleInputFieldElement().sendKeys(inputString);
+		//SingleInputFieldElement().sendKeys(inputString);
+		PageUtility pageUtility=new PageUtility();
+		pageUtility.sendKey(SingleInputFieldElement(), inputString);
 	}
 	public void clickOnShowMessageButton() {
 		showMessageButtonElement().click();
