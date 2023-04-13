@@ -97,6 +97,9 @@ public class PageUtility  {
 		public static Boolean isElementDisplayed(WebElement element) {
 		return element.isDisplayed();
 		}
+		public static Boolean isElementEnabled(WebElement element) {
+			return element.isEnabled();
+		}
 		public static void ScrollBy(WebDriver driver) {
 		JavascriptExecutor Js1 = (JavascriptExecutor) driver;
 		Js1.executeScript("window.scrollBy(0,2500)");
@@ -133,7 +136,7 @@ public class PageUtility  {
 			String firstoption = select1.getFirstSelectedOption().getText();
 			return (firstoption);
 		}
-		public List<WebElement> getAllOptions(Select s) {
+		public  static List<WebElement> getAllOptions(Select s) {
 			List<WebElement> op = s.getOptions();
 			return op;
 		}
@@ -147,7 +150,7 @@ public class PageUtility  {
 		public String stylePropertyValidation(WebElement element, String propertyType) {
 			return element.getCssValue(propertyType);
 		}
-		public boolean isSelected(WebElement element) {
+		public boolean isElementSelected(WebElement element) {
 			return element.isSelected();
 		}
 

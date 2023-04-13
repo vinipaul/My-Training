@@ -18,9 +18,9 @@ public class WaitUtility {
 	public static final long FLUENT_WAIT=10;
 	public static final long POLLING_WAIT=10;
 
-	public static void waitForElement(WebDriver driver, WebElement target) {
+	public static void waitForElement(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.visibilityOf(target));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	public static void waitForElement(WebDriver driver, By target) {
@@ -28,9 +28,9 @@ public class WaitUtility {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(target));
 	}
 
-	public static void waitForElementClickable(WebDriver driver, WebElement target) {
+	public static void waitForElementClickable(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeClickable(target));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
 	public static void waitForElementClickable(WebDriver driver, By target) {
@@ -38,17 +38,16 @@ public class WaitUtility {
 		wait.until(ExpectedConditions.elementToBeClickable(target));
 	}
 
-	public static void waitForElementSelected(WebDriver driver, By target) {           
+	public static void waitForElementSelected(WebDriver driver, WebElement element) {           
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.elementToBeSelected(target));
+		wait.until(ExpectedConditions.elementToBeSelected(element));
 	}
 
-	public static void waitFortextToBePresentInElement(WebDriver driver, By target,String text) {   
+	public static void waitFortextToBePresentInElement(WebDriver driver,WebElement element,String text) {   
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.textToBePresentInElementLocated(target,text));
+		wait.until(ExpectedConditions.textToBePresentInElement(element, text));
 
 	}
-
 	public static void waitForElementIsPresent(WebDriver driver, By target) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.presenceOfElementLocated(target));

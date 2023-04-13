@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.obsqura.maven.TestScripts.LoginTest">
+      <class name="com.obsqura.maven.TestScripts.HomeTest">
         <methods>
-          <include name="verify_login"/>
-          <include name="toQuit"/>
+          <include name="verify_newButton"/>
+          <include name="browserQuit"/>
           <include name="toInitializeBrowser"/>
         </methods>
-      </class> <!-- com.obsqura.maven.TestScripts.LoginTest -->
+      </class> <!-- com.obsqura.maven.TestScripts.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
