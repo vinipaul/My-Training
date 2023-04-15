@@ -6,11 +6,11 @@
 	</listeners>
 	<parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.obsqura.testScripts.LoginTest">
-      </class>
-      <class name="com.obsqura.testScripts.ManagepageTest">
-      </class>
+   <classes>
+  	  <class name="com.obsqura.testScripts.ManagepageTest"/>
+	  <class name="com.obsqura.testScripts.LoginTest"/> 
+     <class name="com.obsqura.testScripts.AdminUsersTest"/>
+      <class name="com.obsqura.testScripts.ManageProductTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

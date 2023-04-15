@@ -27,9 +27,12 @@ public class PageUtility  {
 		public static void sendKey(WebElement element, String s) {
 			element.sendKeys(s);
 		}
-		public boolean isEnabled(WebElement element) {
+		public static boolean isEnabled(WebElement element) {
 			boolean status= element.isEnabled();
 			return status;
+		}
+		public static boolean  isElementSelected(WebElement element) {
+			return element.isSelected();
 		}
 		public static String getElementText(WebElement element) {
 		return element.getText();
@@ -150,10 +153,6 @@ public class PageUtility  {
 		public String stylePropertyValidation(WebElement element, String propertyType) {
 			return element.getCssValue(propertyType);
 		}
-		public boolean isElementSelected(WebElement element) {
-			return element.isSelected();
-		}
-
 		public List<String> addList(List<String>list,String s) {
 			list.add(s);
 			return list;

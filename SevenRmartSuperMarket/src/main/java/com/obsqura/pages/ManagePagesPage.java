@@ -21,7 +21,10 @@ public ManagePagesPage(WebDriver driver) {
 @FindBy(xpath = "//a[contains(@class,'btn btn-rounded btn-primary')]") WebElement searchButtonElement;
 @FindBy (xpath = "//input[@placeholder='Title']") WebElement ListPageTitleTextBoxElement;
 @FindBy (xpath ="//button[@name='Search']") WebElement ListPageSearchButtonElement;
-
+@FindBy (xpath = "//div[contains(@class,'alert alert-danger alert-dismissible')") WebElement alertElement;
+@FindBy (xpath = "//span[@id='res']//child::center") WebElement resultNotFoundElement;
+@FindBy (xpath ="//input[@id='main_img']") WebElement chooseFileButtonElement;
+@FindBy (xpath ="//div[@id='imagePreview']") WebElement imageElement;
 
 @FindBy (xpath = "//input[@placeholder='Username']") WebElement usernameTextBoxElement;
 @FindBy (xpath = "//input[@name='password']") WebElement passwordTextBoxElement;
@@ -30,6 +33,8 @@ public ManagePagesPage(WebDriver driver) {
 By newButtonElementBy=By.xpath("//a[text()=' New']");
 By titleTextBox=By.xpath("//input[@id='title']");
 By pageTextBox=By.xpath("//input[@id='page']");
+By resultnotfoundElementby=By.xpath("//span[@id='res']//child::center");
+By choosefilebuttonBy =By.xpath("//input[@id='main_img']");
 
 By signInButtonElementBy=By.xpath("//button[text()='Sign In']");
 By usernameElementBy=By.xpath("//input[@placeholder='Username']");
@@ -39,6 +44,10 @@ public WebElement signInButton() {
 	WebElement signinbutton=driver.findElement(signInButtonElementBy);
 	return signinbutton;
 }
+public WebElement choosefilebutton() {
+	WebElement choosefilebuttonElement=driver.findElement(choosefilebuttonBy);
+	return choosefilebuttonElement;
+}
 public WebElement usernameTextBox() {
 	WebElement usernametextbox=driver.findElement(usernameElementBy);
 	return usernametextbox;
@@ -46,6 +55,10 @@ public WebElement usernameTextBox() {
 public WebElement passwordTextBox() {
 	WebElement passwordtextbox=driver.findElement(signInButtonElementBy);
 	return passwordtextbox;
+}
+public WebElement resultnotFoundElement() {
+	WebElement reresultnotfoundelement=driver.findElement(resultnotfoundElementby);
+	return reresultnotfoundelement;
 }
 public WebElement newbuttonElement() {
 	WebElement newbuttonelement=driver.findElement(newButtonElementBy);
@@ -93,4 +106,19 @@ public void toentertitletoSearch(String searchTitle) {
 public void clickOnListPageSearchButton() {
 	PageUtility.clickOnElement(ListPageSearchButtonElement);
 }
+public String toknowalertIsPresent() {
+	String alertbackgroundColor= PageUtility.getcssValueofElement(alertElement, "backgroundcolor");
+		return alertbackgroundColor;
+	}
+public boolean toKnowResult() {
+	boolean isPresent=PageUtility.isElementDisplayed(resultNotFoundElement);
+	return isPresent;
 }
+public void clickonchooseFileButton() {
+	PageUtility.clickOnElement(chooseFileButtonElement);
+}
+public boolean toknowImageIsPresent() {
+	return( PageUtility.isElementDisplayed(imageElement));
+}
+}
+	
