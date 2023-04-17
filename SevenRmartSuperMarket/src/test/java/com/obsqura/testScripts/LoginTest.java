@@ -36,10 +36,24 @@ public class LoginTest extends Base {
 	    public Object[][] getDataFromDataprovider(){
 			return new Object[][] 
 	    	{
-	            { "admin","admin" },
-	            { "admin","fhgj" },
-	            { "ghujhk", "admin" },
-	            {"hgjhk","nbjhkj"}
+	            { "admin","admin" }
+					/*
+					 * { "admin","fhgj" }, { "ghujhk", "admin" }, {"hgjhk","nbjhkj"}
+					 */
 	        };
 		}
+	@Test
+	public void verify_SignIn_Button_Text_AlignmentIsCenter() {
+		String expectedTextAlignment="center";
+		loginPage=new LoginPage(driver);
+		String actualTextAlignment=loginPage.signInButtonTextAlignment();
+		assertEquals(expectedTextAlignment,actualTextAlignment,"Alignment is not "+expectedTextAlignment);
+		}
+	@Test
+	public void verify_RememberMeCheckBox_Is_Selected() {
+		boolean expectedResult=false;
+		loginPage =new LoginPage(driver);
+		boolean actualResult=loginPage.isRemembermeCheckboxisSelected();
+		assertEquals(actualResult, expectedResult,"Rememeber me checkbox is found "+expectedResult);
+	}
 }

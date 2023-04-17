@@ -17,18 +17,15 @@ import utilities.WaitUtility;
 
 public class AdminUsersTest extends Base {
 	public AdminUsersPage adminUsersPage;
-	public DashBoardPage dashBoardPage;
 	@Test
-	public void verify_usertypeDropdownBoxISelectable() throws IOException {
+	public void verify_usertypeDropdownBoxIsSelectable() throws IOException {
 		String expectedResult="Partner";
 		adminUsersPage=new AdminUsersPage(driver);
 		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		adminUsersPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 	    adminUsersPage.clickOnSignInButton();
-		driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/list-admin");
-		assertTrue(PageUtility.isElementEnabled(adminUsersPage.newButtonElement()),"NewButton Is not enabled");
+	    adminUsersPage.clickOnAdminUsersLink();
 		adminUsersPage.clickonNewButton();
-		WaitUtility.waitForElement(driver, adminUsersPage.usertypeDropdown());
 		adminUsersPage.toSelectFromDropDown();
 		String actualResult=adminUsersPage.dropdownvalue();
 		assertTrue(actualResult.contains(expectedResult),expectedResult+" not found");

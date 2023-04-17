@@ -111,30 +111,30 @@ public class PageUtility  {
 		JavascriptExecutor Js1 = (JavascriptExecutor) driver;
 		Js1.executeScript("window.stop();");
 		}
-		public String getToolTip(WebElement element) {
+		public  static String getToolTip(WebElement element) {
 			return element.getAttribute("title");
 		}
-		public void getClickElement(WebElement element) {
+		public static void getClickElement(WebElement element) {
 			element.click();
 		}
-		public void mediumDelay(int x) throws InterruptedException {
+		public static void mediumDelay(int x) throws InterruptedException {
 			Thread.sleep(x);
 		}
-		public void selectFuncbyindex(WebElement element, int index) {
+		public static void selectFuncbyindex(WebElement element, int index) {
 			Select select = new Select(element);
 			select.selectByIndex(index);
 		}
-		public void selectFuncbyValue(WebElement element, String value) {
+		public static void selectFuncbyValue(WebElement element, String value) {
 			Select select1 = new Select(element);
 			select1.selectByValue(value);
 		}
-		public String selectFuncbyVisibletext(WebElement element, String visibletext) {
+		public static String selectFuncbyVisibletext(WebElement element, String visibletext) {
 			Select select = new Select(element);
 			select.selectByVisibleText(visibletext);
 			WebElement selectedValue = select.getFirstSelectedOption();
 			return (selectedValue.getText());
 		}
-		public String FirstSelectedOption(WebElement element) {
+		public static String FirstSelectedOption(WebElement element) {
 			Select select1 = new Select(element);
 			String firstoption = select1.getFirstSelectedOption().getText();
 			return (firstoption);
@@ -143,28 +143,28 @@ public class PageUtility  {
 			List<WebElement> op = s.getOptions();
 			return op;
 		}
-		public List<String> convertToStringList(List<WebElement> weList) {
+		public static List<String> convertToStringList(List<WebElement> weList) {
 			List<String> strList = new ArrayList<String>();
 			for (int i = 0; i < weList.size(); i++) {
 				strList.add(weList.get(i).getText());
 			}
 			return strList;
 		}
-		public String stylePropertyValidation(WebElement element, String propertyType) {
+		public static String stylePropertyValidation(WebElement element, String propertyType) {
 			return element.getCssValue(propertyType);
 		}
-		public List<String> addList(List<String>list,String s) {
+		public static List<String> addList(List<String>list,String s) {
 			list.add(s);
 			return list;
 		}
-		public void alertHandlingaccept(WebDriver driver) {
+		public static void alertHandlingaccept(WebDriver driver) {
 		driver.switchTo().alert().accept();
 		}
-		public String alerttext(WebDriver driver) {
+		public static String alerttext(WebDriver driver) {
 			return (driver.switchTo().alert().getText());
 		}	
 			
-		public boolean getElementTextList(List<WebElement> chkList, String element) {
+		public static boolean getElementTextList(List<WebElement> chkList, String element) {
 		boolean value = true;
 		for (int i = 0; i < chkList.size(); i++) {
 		String text = chkList.get(i).getText();
@@ -174,7 +174,7 @@ public class PageUtility  {
 		}
 		return value;
 		}
-		public boolean compareLists(List<String> actuallist, List<String> expectedlist) {
+		public static boolean compareLists(List<String> actuallist, List<String> expectedlist) {
 		boolean value = true;
 		for (int i = 0; i < actuallist.size(); i++) {
 		if (!actuallist.get(i).equals(expectedlist.get(i))) {
@@ -183,7 +183,7 @@ public class PageUtility  {
 			}
 		return value;
 		}
-		public void managSliderList(List<WebElement> actuallist, List<WebElement> element) {
+		public static void manageSliderList(List<WebElement> actuallist, List<WebElement> element) {
 		for (int i = 0; i < actuallist.size(); i++) {
 			String text = actuallist.get(i).getText();
 			if (!text.equals(element)) {

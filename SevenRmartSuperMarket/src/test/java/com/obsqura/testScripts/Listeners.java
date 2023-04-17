@@ -11,8 +11,6 @@ import com.aventstack.extentreports.Status;
 
 import utilities.ExtentReportUtility;
 
-
-
 public class Listeners extends Base implements ITestListener {
 	ExtentTest test;
 	ExtentReports extent=ExtentReportUtility.createExtentReports();

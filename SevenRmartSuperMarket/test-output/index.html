@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>F:\vini java\SevenRmartSuperMarket\parallel_test_testng.xml</span>
+                    <span>F:\vini java\SevenRmartSuperMarket\parallel_class_testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,75 +93,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                    <span class="method-stats">9 methods,  9 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.ManagepageTest" class="method navigator-link" hash-for-method="verify_chooseFileButtonoploadsImage">verify_chooseFileButtonoploadsImage</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.LoginTest" class="method navigator-link" hash-for-method="verify_RememberMeCheckBox_Is_Selected">verify_RememberMeCheckBox_Is_Selected</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.LoginTest" class="method navigator-link" hash-for-method="verify_login_with_Credentials(hgjhk, nbjhkj)">verify_login_with_Credentials(hgjhk, nbjhkj)</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.LoginTest" class="method navigator-link" hash-for-method="verify_SignIn_Button_Text_AlignmentIsCenter">verify_SignIn_Button_Text_AlignmentIsCenter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.LoginTest" class="method navigator-link" hash-for-method="verify_login_with_Credentials(admin, fhgj)">verify_login_with_Credentials(admin, fhgj)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.LoginTest" class="method navigator-link" hash-for-method="verify_login_with_Credentials(ghujhk, admin)">verify_login_with_Credentials(ghujhk, admin)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.LoginTest" class="method navigator-link" hash-for-method="verify_login_with_Credentials(admin, admin)">verify_login_with_Credentials(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.ManagepageTest" class="method navigator-link" hash-for-method="verify_newButton_allowstoAddPageswth_page_and_title">verify_newButton_allowstoAddPageswth_page_and_title</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.ManagepageTest" class="method navigator-link" hash-for-method="verify_newButton_allowstoAddPageswith_new_page_and_title">verify_newButton_allowstoAddPageswith_new_page_and_title</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.ManageProductTest" class="method navigator-link" hash-for-method="verify_nonVegRadioButtonIsSelectable">verify_nonVegRadioButtonIsSelectable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.AdminUsersTest" class="method navigator-link" hash-for-method="verify_resetButtonBackgroundColor">verify_resetButtonBackgroundColor</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.ManagepageTest" class="method navigator-link" hash-for-method="verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage">verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.AdminUsersTest" class="method navigator-link" hash-for-method="verify_usertypeDropdownBoxISelectable">verify_usertypeDropdownBoxISelectable</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.AdminUsersTest" class="method navigator-link" hash-for-method="verify_usertypeDropdownBoxIsSelectable">verify_usertypeDropdownBoxIsSelectable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.testScripts.ManageProductTest" class="method navigator-link" hash-for-method="verify_weightUnitDropdownisWorking">verify_weightUnitDropdownisWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -173,113 +159,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.obsqura.testScripts.ManagepageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_chooseFileButtonoploadsImage">
-                  </a> <!-- verify_chooseFileButtonoploadsImage -->
-                  <span class="method-name">verify_chooseFileButtonoploadsImage</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=112.0.5615.87)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [839b90a33185d6a2917e853e88a18518, clickElement {id=a521ebae-0270-4c34-b196-cce4bb4e2ab4}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PROBOO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59170/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (839b90a33185d6a2917e853e88a18518)] -&gt; xpath: //input[@id=&apos;main_img&apos;]]
-Session ID: 839b90a33185d6a2917e853e88a18518
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at utilities.PageUtility.clickOnElement(PageUtility.java:17)
-	at com.obsqura.pages.ManagePagesPage.clickonchooseFileButton(ManagePagesPage.java:118)
-	at com.obsqura.testScripts.ManagepageTest.verify_chooseFileButtonoploadsImage(ManagepageTest.java:65)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.obsqura.testScripts.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_login_with_Credentials(hgjhk, nbjhkj)">
-                  </a> <!-- verify_login_with_Credentials(hgjhk, nbjhkj) -->
-                  <span class="method-name">verify_login_with_Credentials</span>
-                  <span class="parameters">(hgjhk, nbjhkj)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login failed expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
-	at com.obsqura.testScripts.LoginTest.verify_login_with_Credentials(LoginTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_login_with_Credentials(admin, fhgj)">
-                  </a> <!-- verify_login_with_Credentials(admin, fhgj) -->
-                  <span class="method-name">verify_login_with_Credentials</span>
-                  <span class="parameters">(admin, fhgj)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login failed expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
-	at com.obsqura.testScripts.LoginTest.verify_login_with_Credentials(LoginTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_login_with_Credentials(ghujhk, admin)">
-                  </a> <!-- verify_login_with_Credentials(ghujhk, admin) -->
-                  <span class="method-name">verify_login_with_Credentials</span>
-                  <span class="parameters">(ghujhk, admin)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login failed expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
-	at com.obsqura.testScripts.LoginTest.verify_login_with_Credentials(LoginTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.obsqura.testScripts.ManageProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -288,35 +170,48 @@ Session ID: 839b90a33185d6a2917e853e88a18518
                   <a name="verify_nonVegRadioButtonIsSelectable">
                   </a> <!-- verify_nonVegRadioButtonIsSelectable -->
                   <span class="method-name">verify_nonVegRadioButtonIsSelectable</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;PROBOOK15-650SE&apos;, ip: &apos;192.168.1.26&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at com.obsqura.testScripts.Base.toInitializeBrowser(Base.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 24 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_weightUnitDropdownisWorking">
+                  </a> <!-- verify_weightUnitDropdownisWorking -->
+                  <span class="method-name">verify_weightUnitDropdownisWorking</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at com.obsqura.testScripts.Base.browserQuit(Base.java:102)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.obsqura.testScripts.ManagepageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_newButton_allowstoAddPageswth_page_and_title">
-                  </a> <!-- verify_newButton_allowstoAddPageswth_page_and_title -->
-                  <span class="method-name">verify_newButton_allowstoAddPageswth_page_and_title</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage">
-                  </a> <!-- verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage -->
-                  <span class="method-name">verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.obsqura.testScripts.AdminUsersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -325,53 +220,208 @@ Session ID: 839b90a33185d6a2917e853e88a18518
                   <a name="verify_resetButtonBackgroundColor">
                   </a> <!-- verify_resetButtonBackgroundColor -->
                   <span class="method-name">verify_resetButtonBackgroundColor</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;PROBOOK15-650SE&apos;, ip: &apos;192.168.1.26&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at com.obsqura.testScripts.Base.toInitializeBrowser(Base.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 24 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_usertypeDropdownBoxISelectable">
-                  </a> <!-- verify_usertypeDropdownBoxISelectable -->
-                  <span class="method-name">verify_usertypeDropdownBoxISelectable</span>
+                  <a name="verify_usertypeDropdownBoxIsSelectable">
+                  </a> <!-- verify_usertypeDropdownBoxIsSelectable -->
+                  <span class="method-name">verify_usertypeDropdownBoxIsSelectable</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at com.obsqura.testScripts.Base.browserQuit(Base.java:102)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">com.obsqura.testScripts.ManagepageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_newButton_allowstoAddPageswith_new_page_and_title">
+                  </a> <!-- verify_newButton_allowstoAddPageswith_new_page_and_title -->
+                  <span class="method-name">verify_newButton_allowstoAddPageswith_new_page_and_title</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;PROBOOK15-650SE&apos;, ip: &apos;192.168.1.26&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at com.obsqura.testScripts.Base.toInitializeBrowser(Base.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 24 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage">
+                  </a> <!-- verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage -->
+                  <span class="method-name">verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at com.obsqura.testScripts.Base.browserQuit(Base.java:102)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.obsqura.testScripts.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_RememberMeCheckBox_Is_Selected">
+                  </a> <!-- verify_RememberMeCheckBox_Is_Selected -->
+                  <span class="method-name">verify_RememberMeCheckBox_Is_Selected</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;PROBOOK15-650SE&apos;, ip: &apos;192.168.1.26&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at com.obsqura.testScripts.Base.toInitializeBrowser(Base.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 24 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_SignIn_Button_Text_AlignmentIsCenter">
+                  </a> <!-- verify_SignIn_Button_Text_AlignmentIsCenter -->
+                  <span class="method-name">verify_SignIn_Button_Text_AlignmentIsCenter</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;PROBOOK15-650SE&apos;, ip: &apos;192.168.1.26&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at com.obsqura.testScripts.Base.toInitializeBrowser(Base.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 24 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verify_login_with_Credentials(admin, admin)">
                   </a> <!-- verify_login_with_Credentials(admin, admin) -->
                   <span class="method-name">verify_login_with_Credentials</span>
                   <span class="parameters">(admin, admin)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;PROBOOK15-650SE&apos;, ip: &apos;192.168.1.26&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at com.obsqura.testScripts.Base.toInitializeBrowser(Base.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 24 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\vini java\SevenRmartSuperMarket\parallel_test_testng.xml</span>
+            <span class="header-content">F:\vini java\SevenRmartSuperMarket\parallel_class_testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.obsqura.testScripts.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.obsqura.testScripts.LoginTest&quot;/&gt;
       &lt;class name=&quot;com.obsqura.testScripts.ManagepageTest&quot;/&gt;
-      &lt;class name=&quot;com.obsqura.testScripts.AdminUsersTest&quot;/&gt;
       &lt;class name=&quot;com.obsqura.testScripts.ManageProductTest&quot;/&gt;
+      &lt;class name=&quot;com.obsqura.testScripts.AdminUsersTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -411,52 +461,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_newButton_allowstoAddPageswth_page_and_title')
-data.setCell(0, 2, 'com.obsqura.testScripts.ManagepageTest')
-data.setCell(0, 3, 2820);
+data.setCell(0, 1, 'verify_RememberMeCheckBox_Is_Selected')
+data.setCell(0, 2, 'com.obsqura.testScripts.LoginTest')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_chooseFileButtonoploadsImage')
+data.setCell(1, 1, 'verify_newButton_allowstoAddPageswith_new_page_and_title')
 data.setCell(1, 2, 'com.obsqura.testScripts.ManagepageTest')
-data.setCell(1, 3, 2510);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage')
-data.setCell(2, 2, 'com.obsqura.testScripts.ManagepageTest')
-data.setCell(2, 3, 2111);
+data.setCell(2, 1, 'verify_usertypeDropdownBoxIsSelectable')
+data.setCell(2, 2, 'com.obsqura.testScripts.AdminUsersTest')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_nonVegRadioButtonIsSelectable')
-data.setCell(3, 2, 'com.obsqura.testScripts.ManageProductTest')
-data.setCell(3, 3, 1731);
+data.setCell(3, 1, 'verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage')
+data.setCell(3, 2, 'com.obsqura.testScripts.ManagepageTest')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verify_usertypeDropdownBoxISelectable')
-data.setCell(4, 2, 'com.obsqura.testScripts.AdminUsersTest')
-data.setCell(4, 3, 1638);
+data.setCell(4, 1, 'verify_SignIn_Button_Text_AlignmentIsCenter')
+data.setCell(4, 2, 'com.obsqura.testScripts.LoginTest')
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verify_resetButtonBackgroundColor')
-data.setCell(5, 2, 'com.obsqura.testScripts.AdminUsersTest')
-data.setCell(5, 3, 1314);
+data.setCell(5, 1, 'verify_weightUnitDropdownisWorking')
+data.setCell(5, 2, 'com.obsqura.testScripts.ManageProductTest')
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verify_login_with_Credentials')
 data.setCell(6, 2, 'com.obsqura.testScripts.LoginTest')
-data.setCell(6, 3, 1048);
+data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verify_login_with_Credentials')
-data.setCell(7, 2, 'com.obsqura.testScripts.LoginTest')
-data.setCell(7, 3, 599);
+data.setCell(7, 1, 'verify_resetButtonBackgroundColor')
+data.setCell(7, 2, 'com.obsqura.testScripts.AdminUsersTest')
+data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verify_login_with_Credentials')
-data.setCell(8, 2, 'com.obsqura.testScripts.LoginTest')
-data.setCell(8, 3, 588);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verify_login_with_Credentials')
-data.setCell(9, 2, 'com.obsqura.testScripts.LoginTest')
-data.setCell(9, 3, 552);
+data.setCell(8, 1, 'verify_nonVegRadioButtonIsSelectable')
+data.setCell(8, 2, 'com.obsqura.testScripts.ManageProductTest')
+data.setCell(8, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -482,143 +528,216 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.testScripts.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.obsqura.testScripts.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verify_login_with_Credentials(admin, admin)</span>
-                <span class="method-start">5337 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_login_with_Credentials status=SUCCESS method=LoginTest.verify_login_with_Cre...)</span>
-                <span class="method-start">6395 ms</span>
-              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManageProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">6702 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verify_login_with_Credentials(admin, fhgj)</span>
-                <span class="method-start">10040 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_login_with_Credentials status=FAILURE method=LoginTest.verify_login_with_Cre...)</span>
-                <span class="method-start">10642 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">11011 ms</span>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verify_login_with_Credentials(ghujhk, admin)</span>
-                <span class="method-start">15073 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_login_with_Credentials status=FAILURE method=LoginTest.verify_login_with_Cre...)</span>
-                <span class="method-start">15681 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">16093 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verify_login_with_Credentials(hgjhk, nbjhkj)</span>
-                <span class="method-start">19434 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_login_with_Credentials status=FAILURE method=LoginTest.verify_login_with_Cre...)</span>
-                <span class="method-start">19992 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.testScripts.ManagepageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">20387 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verify_chooseFileButtonoploadsImage</span>
-                <span class="method-start">24605 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_chooseFileButtonoploadsImage status=FAILURE method=ManagepageTest.verify_cho...)</span>
-                <span class="method-start">27129 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">27518 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify_newButton_allowstoAddPageswth_page_and_title</span>
-                <span class="method-start">31892 ms</span>
+                <span class="method-name">verify_RememberMeCheckBox_Is_Selected</span>
+                <span class="method-start">20984 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_newButton_allowstoAddPageswth_page_and_title status=SUCCESS method=Managepag...)</span>
-                <span class="method-start">34715 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">34964 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage</span>
-                <span class="method-start">38997 ms</span>
+                <span class="method-name">verify_resetButtonBackgroundColor</span>
+                <span class="method-start">20984 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManagepageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_newButton_allowstoAddPageswith_new_page_and_title</span>
+                <span class="method-start">20989 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_nonVegRadioButtonIsSelectable</span>
+                <span class="method-start">20990 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage status=SUCCESS m...)</span>
-                <span class="method-start">41109 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=LoginTest.verify_RememberMeCheckBox_Is_Selected()[pri:...)</span>
+                <span class="method-start">21022 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=ManageProductTest.verify_nonVegRadioButtonIsSelectable...)</span>
+                <span class="method-start">21023 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.testScripts.AdminUsersTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">41354 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verify_resetButtonBackgroundColor</span>
-                <span class="method-start">45064 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_resetButtonBackgroundColor status=SUCCESS method=AdminUsersTest.verify_reset...)</span>
-                <span class="method-start">46379 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">46653 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verify_usertypeDropdownBoxISelectable</span>
-                <span class="method-start">50411 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_usertypeDropdownBoxISelectable status=SUCCESS method=AdminUsersTest.verify_u...)</span>
-                <span class="method-start">52050 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=AdminUsersTest.verify_resetButtonBackgroundColor()[pri...)</span>
+                <span class="method-start">21025 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.testScripts.ManageProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">toInitializeBrowser(chrome)</span>
-                <span class="method-start">52308 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">21037 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManagepageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=ManagepageTest.verify_newButton_allowstoAddPageswith_n...)</span>
+                <span class="method-start">21041 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.AdminUsersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">21048 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManagepageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">21065 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">21070 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verify_nonVegRadioButtonIsSelectable</span>
-                <span class="method-start">55854 ms</span>
+                <span class="method-name">verify_usertypeDropdownBoxIsSelectable</span>
+                <span class="method-start">41080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verify_nonVegRadioButtonIsSelectable status=SUCCESS method=ManageProductTest.verify...)</span>
-                <span class="method-start">57586 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=AdminUsersTest.verify_usertypeDropdownBoxIsSelectable(...)</span>
+                <span class="method-start">41093 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_SignIn_Button_Text_AlignmentIsCenter</span>
+                <span class="method-start">41137 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=LoginTest.verify_SignIn_Button_Text_AlignmentIsCenter(...)</span>
+                <span class="method-start">41142 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManagepageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage</span>
+                <span class="method-start">41146 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_weightUnitDropdownisWorking</span>
+                <span class="method-start">41147 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManagepageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=ManagepageTest.verify_searchButton_shows_ResultNotFoun...)</span>
+                <span class="method-start">41150 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toInitializeBrowser(firefox)</span>
+                <span class="method-start">41162 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=ManageProductTest.verify_weightUnitDropdownisWorking()...)</span>
+                <span class="method-start">41163 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.testScripts.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_login_with_Credentials(admin, admin)</span>
+                <span class="method-start">61217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserQuit([TestResult name={null} status=CREATED method=LoginTest.verify_login_with_Credentials(java.lang.Stri...)</span>
+                <span class="method-start">61229 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

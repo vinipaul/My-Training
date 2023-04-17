@@ -1,5 +1,9 @@
 package com.obsqura.pages;
 
+import static org.testng.Assert.assertTrue;
+
+import java.awt.Point;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +21,7 @@ public LoginPage(WebDriver driver) {
 @FindBy (xpath = "//input[@placeholder='Username']") WebElement usernameTextBoxElement;
 @FindBy (xpath = "//input[@name='password']") WebElement passwordTextBoxElement;
 @FindBy (xpath = "//button[text()='Sign In']") WebElement signInButtonElement;
+@FindBy(xpath = "//input[@id='remember']") WebElement remembermeCheckboxElement;
 
 By signInButtonElementBy=By.xpath("//button[text()='Sign In']");
 By usernameElementBy=By.xpath("//input[@placeholder='Username']");
@@ -43,5 +48,13 @@ public void enterPassword(String password) {
 }
 public void clickOnSignInButton() {
 	PageUtility.clickOnElement(signInButtonElement);
+}
+public String signInButtonTextAlignment() {
+	assertTrue(PageUtility.isElementDisplayed(signInButtonElement),"SignInButton is not displayed");
+	String alignment= PageUtility.getcssValueofElement(signInButtonElement, "text-align");
+	return alignment;
+	}
+public boolean isRemembermeCheckboxisSelected() {
+	return(PageUtility.isElementSelected(remembermeCheckboxElement));
 }
 }

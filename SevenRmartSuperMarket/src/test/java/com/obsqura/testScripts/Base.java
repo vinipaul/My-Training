@@ -24,7 +24,7 @@ public class Base {
 	public Properties prop,prop1;
     FileInputStream fs;
     public ScreenshotUtility scrshot;
-	@BeforeMethod
+	@BeforeMethod (alwaysRun = true)
 	@Parameters("browser")
 	public void toInitializeBrowser(String browser) throws Exception {
 		prop=new Properties(); 		
@@ -81,7 +81,7 @@ public class Base {
 			  System.setProperty("webdriver.edge.driver",System.getProperty("user.dir")+constants.Constants.edgedriverpath);
 			  EdgeOptions options=new EdgeOptions();
 			  options.addArguments("--remote-allow-origins=*");
-			 driver= new EdgeDriver(options);
+			  driver= new EdgeDriver(options);
 		}
 		else 
 		{
@@ -91,7 +91,7 @@ public class Base {
 		driver.manage().window().maximize();
 		WaitUtility.pageLoadTimeOutWait(driver);
 	}
-	@AfterMethod
+	@AfterMethod (alwaysRun = true)
 	public void browserQuit(ITestResult iTestResult) throws IOException 
 	{
 		if (iTestResult.getStatus() == ITestResult.FAILURE)

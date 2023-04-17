@@ -46,7 +46,6 @@ public class WaitUtility {
 	public static void waitFortextToBePresentInElement(WebDriver driver,WebElement element,String text) {   
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.textToBePresentInElement(element, text));
-
 	}
 	public static void waitForElementIsPresent(WebDriver driver, By target) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
