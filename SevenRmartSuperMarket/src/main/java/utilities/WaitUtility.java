@@ -18,11 +18,6 @@ public class WaitUtility {
 	public static final long FLUENT_WAIT=10;
 	public static final long POLLING_WAIT=10;
 
-	public static void waitForElement(WebDriver driver, WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
-		wait.until(ExpectedConditions.visibilityOf(element));
-	}
-
 	public static void waitForElement(WebDriver driver, By target) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(target));
@@ -65,6 +60,12 @@ public class WaitUtility {
 	public static void waitForInvisibilityOfElementLocated(WebDriver driver, By target) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(target));
+	
+	}
+	public static void waitForvisibilityOfElement(WebDriver driver,WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(EXPLICIT_WAIT));
+		wait.until(ExpectedConditions.visibilityOf(element));
+	
 	}
 
 	public static void waitForPresenceOfAllElementsLocated(WebDriver driver, By target) {

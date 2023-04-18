@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="com.obsqura.testScripts.Listeners"/>
 	</listeners>
-	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
    <classes>
 	    <class name="com.obsqura.testScripts.LoginTest"/> 

@@ -23,6 +23,7 @@ public class ManageProductTest extends Base {
 		manageProductPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		manageProductPage.clickOnSignInButton();
 		manageProductPage.clickOnManageProductLink();
+		assertTrue(manageProductPage.isNewButtonEnabled(),"New Button is Disabled");
 		manageProductPage.clickonNewButton();
 		boolean isRadioButtonSelected=manageProductPage.nonVegRadioButtonIsSelected();
 		assertFalse(isRadioButtonSelected,"Found NonVeg is already "+expectedResult);
@@ -36,6 +37,7 @@ public class ManageProductTest extends Base {
 		manageProductPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		manageProductPage.clickOnSignInButton();
 		manageProductPage.clickOnManageProductLink();
+		assertTrue(manageProductPage.isNewButtonEnabled(),"New Button is Disabled");
 		manageProductPage.clickonNewButton();
 		manageProductPage.toSelectfromDropDown();
 		String actualResult= manageProductPage.getdropdownText();

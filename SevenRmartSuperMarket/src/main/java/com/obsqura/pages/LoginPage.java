@@ -1,9 +1,5 @@
 package com.obsqura.pages;
 
-import static org.testng.Assert.assertTrue;
-
-import java.awt.Point;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class LoginPage {
 public WebDriver driver;
@@ -23,34 +20,32 @@ public LoginPage(WebDriver driver) {
 @FindBy (xpath = "//button[text()='Sign In']") WebElement signInButtonElement;
 @FindBy(xpath = "//input[@id='remember']") WebElement remembermeCheckboxElement;
 
-By signInButtonElementBy=By.xpath("//button[text()='Sign In']");
-By usernameElementBy=By.xpath("//input[@placeholder='Username']");
-By passwordElementBy=By.xpath("//input[@name='password']");
-
-public WebElement signInButton() {
-	WebElement signinbutton=driver.findElement(signInButtonElementBy);
-	return signinbutton;
+public boolean isUserNameTextBoxDisplayed() {
+	return PageUtility.isElementDisplayed(usernameTextBoxElement);
 }
-public WebElement usernameTextBox() {
-	WebElement usernametextbox=driver.findElement(usernameElementBy);
-	return usernametextbox;
-}
-public WebElement passwordTextBox() {
-	WebElement passwordtextbox=driver.findElement(signInButtonElementBy);
-	return passwordtextbox;
-}
-
 public void enterUserName(String username) {
+	WaitUtility.waitForvisibilityOfElement(driver,usernameTextBoxElement);
 	PageUtility.enterText(usernameTextBoxElement, username);
 }
+public boolean ispasswordTextBoxDisplayed() {
+	return PageUtility.isElementDisplayed(passwordTextBoxElement);
+}
 public void enterPassword(String password) {
+	WaitUtility.waitForvisibilityOfElement(driver,passwordTextBoxElement );
 	PageUtility.enterText(passwordTextBoxElement, password);
 }
+public boolean issignInButtonEnabled() {
+	return PageUtility.isEnabled(signInButtonElement);
+}
 public void clickOnSignInButton() {
+	WaitUtility.waitForElementClickable(driver, signInButtonElement);
 	PageUtility.clickOnElement(signInButtonElement);
 }
+public boolean issignInButtonDisplayed() {
+	return PageUtility.isElementDisplayed(signInButtonElement);
+}
 public String signInButtonTextAlignment() {
-	assertTrue(PageUtility.isElementDisplayed(signInButtonElement),"SignInButton is not displayed");
+	WaitUtility.waitForvisibilityOfElement(driver, signInButtonElement);
 	String alignment= PageUtility.getcssValueofElement(signInButtonElement, "text-align");
 	return alignment;
 	}

@@ -22,13 +22,11 @@ public class LoginTest extends Base {
 	public void verify_login_with_Credentials(String username,String password) {
 		String expectedurl="https://groceryapp.uniqassosiates.com/admin";
 		loginPage=new LoginPage(driver);
-		assertTrue(PageUtility.isElementDisplayed(loginPage.usernameTextBox()),"UserName Field Is Not Enabled");
+		assertTrue(loginPage.isUserNameTextBoxDisplayed(),"UserName Field Is Not displayed");
 		loginPage.enterUserName(username);
-		WaitUtility.waitForElement(driver, loginPage.usernameTextBox());
-		assertTrue(PageUtility.isElementDisplayed(loginPage.passwordTextBox()),"Password Field Is Not Enabled");
+		assertTrue(loginPage.ispasswordTextBoxDisplayed(),"Password Field Is Not Dispalyed");
 		loginPage.enterPassword(password);
-		WaitUtility.waitForElement(driver, loginPage.passwordTextBox());
-		assertTrue(PageUtility.isElementEnabled(loginPage.signInButton()));
+		assertTrue(loginPage.issignInButtonEnabled(),"Sign in Button is Disabled");
 		loginPage.clickOnSignInButton();
 		assertEquals(driver.getCurrentUrl(),expectedurl,"Login failed" );
 		}
@@ -36,16 +34,14 @@ public class LoginTest extends Base {
 	    public Object[][] getDataFromDataprovider(){
 			return new Object[][] 
 	    	{
-	            { "admin","admin" }
-					/*
-					 * { "admin","fhgj" }, { "ghujhk", "admin" }, {"hgjhk","nbjhkj"}
-					 */
+	            {"admin","admin"}
 	        };
 		}
 	@Test
 	public void verify_SignIn_Button_Text_AlignmentIsCenter() {
 		String expectedTextAlignment="center";
 		loginPage=new LoginPage(driver);
+		assertTrue(loginPage.issignInButtonDisplayed(), "Sign in BUtton is not Displayed");
 		String actualTextAlignment=loginPage.signInButtonTextAlignment();
 		assertEquals(expectedTextAlignment,actualTextAlignment,"Alignment is not "+expectedTextAlignment);
 		}

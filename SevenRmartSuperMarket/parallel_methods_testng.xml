@@ -5,12 +5,14 @@
 		<listener class-name="com.obsqura.testScripts.Listeners"/>
 	</listeners>
 	<parameter name="browser" value="chrome"></parameter>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test1">
     <classes>
-      <class name="com.obsqura.testScripts.LoginTest"/>
-      <class name="com.obsqura.testScripts.ManagepageTest"/>
-	  <class name="com.obsqura.testScripts.AdminUsersTest"/>
-      <class name="com.obsqura.testScripts.ManageProductTest"/>
+      <class name="com.obsqura.testScripts.ManagepageTest">
+      <methods>
+		  <include name="verify_newButton_allowstoAddPageswith_new_page_and_title"></include>
+		  <include name="verify_weightUnitDropdownisWorking"></include>
+	  </methods>
+      </class>
     </classes>
-  </test> <!-- Test -->
+  </test>
 </suite> <!-- Suite -->
