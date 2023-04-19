@@ -2,7 +2,6 @@ package utilities;
 
 import java.util.Date;
 
-
 import com.github.javafaker.Faker;
 
 public class FakerUtility {

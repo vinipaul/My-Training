@@ -12,7 +12,6 @@
       <class name="com.obsqura.testScripts.LoginTest"/>
       <class name="com.obsqura.testScripts.ManagepageTest"/>
       <class name="com.obsqura.testScripts.ManageExpenseTest"/>
-       
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

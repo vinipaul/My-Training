@@ -26,7 +26,8 @@ public class LoginTest extends Base {
 		loginPage.enterUserName(username);
 		loginPage.enterPassword(password);
 		loginPage.clickOnSignInButton();
-		assertEquals(driver.getCurrentUrl(),expectedurl,"Login failed" );
+		String actualUrl=driver.getCurrentUrl();
+		assertEquals(actualUrl,expectedurl,"Login failed" );
 		}
 		@DataProvider(name="LoginProvider")
 	    public Object[][] getDataFromDataprovider(){

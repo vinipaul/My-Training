@@ -35,9 +35,6 @@ public class ManageProductPage {
 	public void clickOnSignInButton() {
 		PageUtility.clickOnElement(signInButtonElement);
 	}
-	public boolean isNewButtonEnabled() {
-		return PageUtility.isEnabled(newButtonElement);
-	}
 	public void clickonNewButton() {
 		WaitUtility.waitForElementClickable(driver,newButtonElement);
 		PageUtility.clickOnElement(newButtonElement);

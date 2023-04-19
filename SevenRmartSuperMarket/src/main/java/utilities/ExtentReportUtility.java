@@ -7,7 +7,7 @@ public class ExtentReportUtility {
     public synchronized static ExtentReports createExtentReports()
     {
     	ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
-        reporter.config().setReportName("Sample Extent Report");
+        reporter.config().setReportName("Seven  R Mart Super Market");
         extentReports.attachReporter(reporter);
         extentReports.setSystemInfo("Blog Name", "SW Test Academy");
         extentReports.setSystemInfo("Author", "Onur Baskirt");

@@ -29,40 +29,28 @@ public class Base {
 	@Parameters("browser")
 	public void toInitializeBrowser(String browser) throws Exception {
 		prop=new Properties(); 		
-		try
-		{ 			
+		try{ 			
 			fs = new FileInputStream(System.getProperty("user.dir") +constants.Constants.CONFIGfILE);
-		}
-		catch (Exception e) 
+		}catch (Exception e) 
 		{ 				
-				
 		} 		
-		try
-		{ 			
+		try{ 			
 			prop.load(fs); 		
-		} 
-		catch (Exception e) 
+		}catch (Exception e) 
 		{ 			
 				
 		} 	
-		 prop1=new Properties();  	
-		try
-		{ 		
+		prop1=new Properties();  	
+		try{ 		
 			fs = new FileInputStream(System.getProperty("user.dir") +constants.Constants.TESTDATAFILE);   		
-		} 
-		catch (Exception e)
+		}catch (Exception e)
 		{ 				
-			
 		} 		
-		try
-		{  			
-		prop1.load(fs); 		
-		}
-		catch (Exception e) 
+		try{  			
+			prop1.load(fs); 		
+		}catch (Exception e) 
 		{ 			
-					
 		}
-		
 		if(browser.equalsIgnoreCase("firefox")) 
 		{
 			  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+constants.Constants.geckodriverpath); 
@@ -73,14 +61,18 @@ public class Base {
 		else if(browser.equalsIgnoreCase("chrome")) 
 		{
 			/*
-			 * ChromeOptions options=new ChromeOptions();
-			 * options.addArguments("--remote-allow-origins=*"); driver=new
-			 * ChromeDriver(options);
+			 * ChromeOptions chromeOptions = new ChromeOptions();
+			 * chromeOptions.addArguments("--remote-allow-origins=*");
+			 * WebDriverManager.chromedriver().create(); driver = new
+			 * ChromeDriver(chromeOptions);
 			 */
 			
-			 System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ constants.Constants.chromedriverpath); ChromeOptions options = new
-			 ChromeOptions(); options.addArguments("--remote-allow-origins=*"); driver=new
-			 ChromeDriver(options);
+			
+			  System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+
+			  constants.Constants.chromedriverpath); ChromeOptions options = new
+			  ChromeOptions(); options.addArguments("--remote-allow-origins=*"); driver=new
+			  ChromeDriver(options);
+			 
 			 
 		} 
 		else if(browser.equalsIgnoreCase("Edge"))

@@ -18,6 +18,7 @@ public void verify_newButton_allowstoAddPageswith_new_page_and_title() throws IO
 	 managePagesPage.clickOnSignInButton();
 	 managePagesPage.clickOnManagePagesLink();
 	 managePagesPage.clickonNewButton();
+	// managePagesPage.clickOnSignInButton().clickOnManagePagesLink().clickonNewButton();
 	 String title=FakerUtility.fakeFoodName();
 	 String page=FakerUtility.fakeFoodName();
 	 managePagesPage.toEnterTitle(title);

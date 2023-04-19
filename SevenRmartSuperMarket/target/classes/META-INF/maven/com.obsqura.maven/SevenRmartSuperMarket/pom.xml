@@ -31,23 +31,23 @@
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.1.1</version>
-<scope>test</scope>
-</dependency>
+	<scope>test</scope>
+  </dependency>
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.8.3</version>
-</dependency>
-<dependency>
+  </dependency>
+  <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>
     <version>5.0.0</version>
-</dependency>
-<dependency>
+  </dependency>
+  <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
     <version>5.0.0</version>
-</dependency>
+  </dependency>
   <dependency>
     <groupId>com.github.javafaker</groupId>
     <artifactId>javafaker</artifactId>
@@ -57,13 +57,12 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
-</dependency>
-<dependency>
+  </dependency>
+  <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.5</version>
     <scope>test</scope>
-</dependency>
-
-  </dependencies>
+  </dependency>
+</dependencies>
 </project>
