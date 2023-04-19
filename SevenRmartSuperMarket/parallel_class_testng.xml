@@ -11,6 +11,7 @@
   		<class name="com.obsqura.testScripts.ManagepageTest"/>
 	    <class name="com.obsqura.testScripts.ManageProductTest"/>
         <class name="com.obsqura.testScripts.AdminUsersTest"/>
+        <class name="com.obsqura.testScripts.ManageExpenseTest"/>
    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

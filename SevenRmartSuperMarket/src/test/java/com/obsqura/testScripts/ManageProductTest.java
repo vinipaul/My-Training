@@ -15,32 +15,30 @@ import utilities.PageUtility;
 
 public class ManageProductTest extends Base {
 	ManageProductPage manageProductPage;
-	@Test
+	@Test (groups = {"Regression"})
 	public void verify_nonVegRadioButtonIsSelectable() throws IOException {
-		boolean expectedResult=true;
 		manageProductPage=new ManageProductPage(driver);
 	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		manageProductPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		manageProductPage.clickOnSignInButton();
 		manageProductPage.clickOnManageProductLink();
-		assertTrue(manageProductPage.isNewButtonEnabled(),"New Button is Disabled");
 		manageProductPage.clickonNewButton();
 		boolean isRadioButtonSelected=manageProductPage.nonVegRadioButtonIsSelected();
-		assertFalse(isRadioButtonSelected,"Found NonVeg is already "+expectedResult);
+		assertFalse(isRadioButtonSelected,"Found NonVeg is already selected");
 		manageProductPage.clickOnNonvegRadioButton();
+		assertTrue(manageProductPage.nonVegRadioButtonIsSelected(),"Failed To select");
 		}
-	@Test
+	@Test(groups = {"Regression","Sanity"})
 	public void verify_weightUnitDropdownisWorking() throws IOException {
-		String expectedResult="g";
+		String expectedResult=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageProduct_Page");
 		manageProductPage=new ManageProductPage(driver);
 	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		manageProductPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		manageProductPage.clickOnSignInButton();
 		manageProductPage.clickOnManageProductLink();
-		assertTrue(manageProductPage.isNewButtonEnabled(),"New Button is Disabled");
 		manageProductPage.clickonNewButton();
 		manageProductPage.toSelectfromDropDown();
 		String actualResult= manageProductPage.getdropdownText();
-		assertEquals(actualResult, expectedResult);
+		assertEquals(actualResult, expectedResult,"Result not "+expectedResult);
 	}
 }

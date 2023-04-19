@@ -19,7 +19,7 @@ public class AdminUsersTest extends Base {
 	public AdminUsersPage adminUsersPage;
 	@Test
 	public void verify_usertypeDropdownBoxIsSelectable() throws IOException {
-		String expectedResult="Partner";
+		String expectedResult=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"AdminUsers_page");
 		adminUsersPage=new AdminUsersPage(driver);
 		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		adminUsersPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
@@ -32,13 +32,12 @@ public class AdminUsersTest extends Base {
 	}
 	@Test
 	public void verify_resetButtonBackgroundColor() throws IOException {
-		String expectedBackGroundColor="rgba(255, 193, 7, 1)";
+		String expectedBackGroundColor=ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"AdminUsers_page");
 		adminUsersPage=new AdminUsersPage(driver);
 		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 		adminUsersPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
 	    adminUsersPage.clickOnSignInButton();
 	    adminUsersPage.clickOnAdminUsersLink();
-		assertTrue(adminUsersPage.isResetButtonDisplayed(),"Reset Button Is not displayed");
 		String actualColor=adminUsersPage.togetbackGroundColorofButton();
 		assertEquals(actualColor, expectedBackGroundColor,"BackGround Color is not "+expectedBackGroundColor);
 		

@@ -58,5 +58,15 @@ package utilities;
 			return String.valueOf(value);
 
 		}  
+		public static boolean getBooleanValue(int i, int j, String file_path, String sheet) throws IOException {
+			f = new FileInputStream(file_path);
+			wb = new XSSFWorkbook(f);
+			sh = wb.getSheet(sheet);
+			Row r = sh.getRow(i);
+			Cell c = r.getCell(j);
+			boolean value= c.getBooleanCellValue();
+			return value;
+
+		}  
 }
 

@@ -16,6 +16,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ScreenshotUtility;
 import utilities.WaitUtility;
 
@@ -71,10 +72,16 @@ public class Base {
 		}
 		else if(browser.equalsIgnoreCase("chrome")) 
 		{
-			 System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+constants.Constants.chromedriverpath);
-			 ChromeOptions options = new ChromeOptions(); 
-			 options.addArguments("--remote-allow-origins=*"); 
-			 driver=new ChromeDriver(options);
+			/*
+			 * ChromeOptions options=new ChromeOptions();
+			 * options.addArguments("--remote-allow-origins=*"); driver=new
+			 * ChromeDriver(options);
+			 */
+			
+			 System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ constants.Constants.chromedriverpath); ChromeOptions options = new
+			 ChromeOptions(); options.addArguments("--remote-allow-origins=*"); driver=new
+			 ChromeDriver(options);
+			 
 		} 
 		else if(browser.equalsIgnoreCase("Edge"))
 		{
@@ -87,7 +94,7 @@ public class Base {
 		{
 			throw new Exception("Browser is not correct"); 
 		}
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("url"));	
 		driver.manage().window().maximize();
 		WaitUtility.pageLoadTimeOutWait(driver);
 	}

@@ -13,11 +13,11 @@
   		  </classes>
   	 </test>
   	
-   	 <test name="edge test">
+   	 <test name="Edge test">
 	    <parameter name="browser" value="Edge"></parameter>
 	   <classes>
-      		<class name="com.obsqura.testScripts.ManagepageTest">
-   		    </class>
+      		<class name="com.obsqura.testScripts.ManagepageTest"/>
+			<class name="com.obsqura.testScripts.ManageExpenseTest"/>
   	   </classes>
  	  </test> <!-- Test -->
 </suite> <!-- Suite -->

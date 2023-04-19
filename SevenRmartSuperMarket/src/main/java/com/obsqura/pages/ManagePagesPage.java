@@ -27,6 +27,7 @@ public ManagePagesPage(WebDriver driver) {
 @FindBy (xpath = "//input[@name='password']") WebElement passwordTextBoxElement;
 @FindBy (xpath = "//button[text()='Sign In']") WebElement signInButtonElement;
 @FindBy(xpath = "(//div[contains(@class,'col-lg-3 col-6')]//a)[1]") WebElement managepagesLinkElement;
+@FindBy(xpath = "(//tbody//child::tr//td)[1]") WebElement firstPageTitle;
 
 public void enterUserName(String username) {
 	PageUtility.enterText(usernameTextBoxElement, username);
@@ -37,23 +38,16 @@ public void enterPassword(String password) {
 public void clickOnSignInButton() {
 	PageUtility.clickOnElement(signInButtonElement);
 }
-
 public void clickonNewButton() {
 	PageUtility.clickOnElement(newButtonElement);
 }
 public boolean isNewButtonEnabled() {
 	return PageUtility.isElementEnabled(newButtonElement);
 }
-public boolean isTitleTextBoxDispalyed() {
-	return PageUtility.isElementDisplayed(titleElement);
-}
 public void toEnterTitle(String title) {
 	PageUtility.clearText(titleElement);
 	WaitUtility.waitForvisibilityOfElement(driver, titleElement);
 	PageUtility.enterText(titleElement, title);
-}
-public boolean isPageTextBoxDispalyed() {
-	return PageUtility.isElementDisplayed(pageElement);
 }
 public void toEnterPage(String page) {
 	WaitUtility.waitForvisibilityOfElement(driver,pageElement);
@@ -65,9 +59,6 @@ public void clickOnSaveButton() {
 public void clickOnSearchButton() {
 	PageUtility.clickOnElement(searchButtonElement);
 }
-public boolean isSearchButtonEnabled() {
-	return PageUtility.isElementEnabled(searchButtonElement);
-}
 public void clickOnManagePagesLink() {
 	PageUtility.clickOnElement(managepagesLinkElement);
 }
@@ -75,19 +66,25 @@ public void toentertitletoSearch(String searchTitle) {
 	WaitUtility.waitForvisibilityOfElement(driver, ListPageSearchButtonElement);
 	PageUtility.enterText(ListPageTitleTextBoxElement, searchTitle);
 	}
-public boolean istittleTextBoxDisplayed() {
-	return PageUtility.isElementDisplayed(ListPageTitleTextBoxElement);
-}
+
 public void clickOnListPageSearchButton() {
 	PageUtility.clickOnElement(ListPageSearchButtonElement);
 	WaitUtility.waitForvisibilityOfElement(driver, ListPageSearchButtonElement);
 }
-public boolean isListPageSearchButtonEnabled() {
-	return PageUtility.isElementDisplayed(ListPageSearchButtonElement);
-}
 public boolean toKnowResult() {
 	boolean isPresent=PageUtility.isElementDisplayed(resultNotFoundElement);
 	return isPresent;
+}
+public String checknewlyAddedPageIntheTable() {
+	driver.navigate().back();
+	driver.navigate().back();
+	boolean isDisaplayed= PageUtility.isElementDisplayed(firstPageTitle);
+	if(isDisaplayed==true) {
+		return PageUtility.getElementText(firstPageTitle);
+	}else {
+		return "not found";
+	}
+	
 }
 }
 	

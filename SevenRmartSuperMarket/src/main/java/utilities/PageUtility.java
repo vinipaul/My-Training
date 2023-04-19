@@ -174,6 +174,12 @@ public class PageUtility  {
 		}
 		return value;
 		}
+		public static String getAlertBoxText(WebDriver driver) {
+			return driver.switchTo().alert().getText();
+		}
+		public static void alertCancelButton(WebDriver driver) {
+		driver.switchTo().alert().dismiss();
+		}
 		public static boolean compareLists(List<String> actuallist, List<String> expectedlist) {
 		boolean value = true;
 		for (int i = 0; i < actuallist.size(); i++) {

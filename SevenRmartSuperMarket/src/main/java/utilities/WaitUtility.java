@@ -3,6 +3,7 @@ package utilities;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +28,6 @@ public class WaitUtility {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
-
 	public static void waitForElementClickable(WebDriver driver, By target) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.elementToBeClickable(target));
@@ -46,17 +46,18 @@ public class WaitUtility {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.presenceOfElementLocated(target));
 	}
-
 	public static void waitForAlterIsPresent(WebDriver driver) { 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
-
+	public static Alert IsAlterIsPresent(WebDriver driver) { 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
+		return wait.until(ExpectedConditions.alertIsPresent());
+	}
 	public static void waitForFrameToBeAvailableAndSwitchToIt(WebDriver driver, By target) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(target));
 	}
-
 	public static void waitForInvisibilityOfElementLocated(WebDriver driver, By target) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(target));

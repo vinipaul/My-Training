@@ -1,13 +1,9 @@
 package com.obsqura.pages;
 
-
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import utilities.PageUtility;
 import utilities.WaitUtility;
@@ -35,9 +31,6 @@ public class AdminUsersPage {
 	public void clickOnSignInButton() {
 		PageUtility.clickOnElement(signInButtonElement);
 	}
-	public boolean isNewButtonEnabled() {
-		return PageUtility.isEnabled(newButtonElement);
-	}
 	public void clickonNewButton() {
 		WaitUtility.waitForElementClickable(driver, newButtonElement);
 		PageUtility.clickOnElement(newButtonElement);
@@ -45,9 +38,6 @@ public class AdminUsersPage {
 	public void toSelectFromDropDown() {
 		WaitUtility.waitForvisibilityOfElement(driver, usertypedropdownElement);
 		PageUtility.selectDropdownbyIndex(usertypedropdownElement, 3);
-	}
-	public boolean isResetButtonDisplayed() {
-		return PageUtility.isElementDisplayed(resetButtonElement);
 	}
 	public String dropdownvalue() {
 		WaitUtility.waitForvisibilityOfElement(driver, usertypedropdownElement);

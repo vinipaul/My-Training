@@ -5,10 +5,15 @@
 		<listener class-name="com.obsqura.testScripts.Listeners"/>
 	</listeners>
 	<parameter name="browser" value="chrome"></parameter>
-    <test thread-count="5" name="Test">
+    <test thread-count="5" name="Test1">
  		<classes>
 			<class name="com.obsqura.testScripts.LoginTest"/>
 			<class name="com.obsqura.testScripts.ManagepageTest"/>
+			<class name="com.obsqura.testScripts.ManageExpenseTest"/>
+ 		</classes>
+  	</test> <!-- Test -->
+  	<test thread-count="5" name="Test2">
+ 		<classes>
 			<class name="com.obsqura.testScripts.AdminUsersTest"/>
     		<class name="com.obsqura.testScripts.ManageProductTest"/>
  		</classes>

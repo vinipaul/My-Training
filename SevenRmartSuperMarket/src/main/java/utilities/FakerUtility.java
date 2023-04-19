@@ -14,6 +14,10 @@ public class FakerUtility {
 		Faker faker=new Faker();
 		return faker.name().lastName();
 	}
+	public static String fakeFoodName() {
+		Faker faker=new Faker();
+		return faker.food().fruit();
+	}
 	public static String fakeCityName() {
 		Faker faker=new Faker();
 		return faker.address().cityName();
