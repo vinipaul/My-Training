@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.obsqura.testScripts.Listeners"/>
+  </listeners>
+  <test thread-count="2" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.obsqura.testScripts.ManageProductTest">
+        <methods>
+          <include name="toInitializeBrowser"/>
+          <include name="browserQuit"/>
+          <include name="verify_nonVegRadioButtonIsSelectable"/>
+          <include name="verify_weightUnitDropdownisWorking"/>
+        </methods>
+      </class> <!-- com.obsqura.testScripts.ManageProductTest -->
+      <class name="com.obsqura.testScripts.AdminUsersTest">
+        <methods>
+          <include name="verify_resetButtonBackgroundColor"/>
+          <include name="toInitializeBrowser"/>
+          <include name="browserQuit"/>
+          <include name="verify_usertypeDropdownBoxIsSelectable"/>
+        </methods>
+      </class> <!-- com.obsqura.testScripts.AdminUsersTest -->
+      <class name="com.obsqura.testScripts.ManagepageTest">
+        <methods>
+          <include name="verify_newButton_allowstoAddPageswith_new_page_and_title"/>
+          <include name="toInitializeBrowser"/>
+          <include name="browserQuit"/>
+          <include name="verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage"/>
+        </methods>
+      </class> <!-- com.obsqura.testScripts.ManagepageTest -->
+      <class name="com.obsqura.testScripts.LoginTest">
+        <methods>
+          <include name="verify_SignIn_Button_Text_AlignmentIsCenter"/>
+          <include name="verify_login_with_Credentials"/>
+          <include name="toInitializeBrowser"/>
+          <include name="browserQuit"/>
+          <include name="verify_RememberMeCheckBox_Is_Selected"/>
+        </methods>
+      </class> <!-- com.obsqura.testScripts.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
