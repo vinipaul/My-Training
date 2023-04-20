@@ -1,6 +1,5 @@
 package com.obsqura.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,33 +22,40 @@ public class ManageProductPage {
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-product' and  @class='small-box-footer']") WebElement manageproductLinkElement;
 	@FindBy(xpath = "//select[@id='w_unit']") WebElement weightunitdropdownElement;
 	
-	public void clickOnManageProductLink() {
+	public ManageProductPage clickOnManageProductLink() {
 		PageUtility.clickOnElement(manageproductLinkElement);
+		return this;
 	}
-	public void enterUserName(String username) {
+	public ManageProductPage enterUserName(String username) {
 		PageUtility.enterText(usernameTextBoxElement, username);
+		return this;
 	}
-	public void enterPassword(String password) {
+	public ManageProductPage enterPassword(String password) {
 		PageUtility.enterText(passwordTextBoxElement, password);
+		return this;
 	}
-	public void clickOnSignInButton() {
+	public ManageProductPage clickOnSignInButton() {
 		PageUtility.clickOnElement(signInButtonElement);
+		return this;
 	}
-	public void clickonNewButton() {
+	public ManageProductPage clickonNewButton() {
 		WaitUtility.waitForElementClickable(driver,newButtonElement);
 		PageUtility.clickOnElement(newButtonElement);
+		return this;
 	}
-	public void clickOnNonvegRadioButton() {
+	public ManageProductPage clickOnNonvegRadioButton() {
 		PageUtility.clickOnElement(nonvegRadioButtonElement);
 		WaitUtility.waitForElementSelected(driver,nonvegRadioButtonElement);
+		return this;
 	}
 	public boolean nonVegRadioButtonIsSelected() {
 		WaitUtility.waitForvisibilityOfElement(driver, nonvegRadioButtonElement);
 		return PageUtility.isElementSelected(nonvegRadioButtonElement);
 	}
-	public void toSelectfromDropDown(){
+	public ManageProductPage toSelectfromDropDown(){
 		PageUtility.selectDropdownbyText(weightunitdropdownElement, "g");
 		WaitUtility.waitFortextToBePresentInElement(driver, weightunitdropdownElement, "g");
+		return this;
 		}
 	public String getdropdownText() {
 		WaitUtility.waitForvisibilityOfElement(driver, weightunitdropdownElement);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.obsqura.testScripts.ManagepageTest">
+      <class name="com.obsqura.testScripts.ManageSliderTest">
         <methods>
           <include name="toInitializeBrowser"/>
           <include name="browserQuit"/>
-          <include name="verify_newButton"/>
+          <include name="verify_file_uploads_when_choosefile_Button_Clicked"/>
         </methods>
-      </class> <!-- com.obsqura.testScripts.ManagepageTest -->
+      </class> <!-- com.obsqura.testScripts.ManageSliderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

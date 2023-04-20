@@ -22,22 +22,27 @@ public class AdminUsersPage {
 	@FindBy(xpath = "//a[contains(@class,'btn btn-rounded btn-warning')]") WebElement resetButtonElement;
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and  @class='small-box-footer']") WebElement adminUsersLinkElement;
 			
-	public void enterUserName(String username) {
+	public AdminUsersPage enterUserName(String username) {
 		PageUtility.enterText(usernameTextBoxElement, username);
+		return this;
 	}
-	public void enterPassword(String password) {
+	public AdminUsersPage enterPassword(String password) {
 		PageUtility.enterText(passwordTextBoxElement, password);
+		return this;
 	}
-	public void clickOnSignInButton() {
+	public AdminUsersPage clickOnSignInButton() {
 		PageUtility.clickOnElement(signInButtonElement);
+		return this;
 	}
-	public void clickonNewButton() {
+	public AdminUsersPage clickonNewButton() {
 		WaitUtility.waitForElementClickable(driver, newButtonElement);
 		PageUtility.clickOnElement(newButtonElement);
+		return this;
 	}
-	public void toSelectFromDropDown() {
+	public AdminUsersPage toSelectFromDropDown() {
 		WaitUtility.waitForvisibilityOfElement(driver, usertypedropdownElement);
 		PageUtility.selectDropdownbyIndex(usertypedropdownElement, 3);
+		return this;
 	}
 	public String dropdownvalue() {
 		WaitUtility.waitForvisibilityOfElement(driver, usertypedropdownElement);
@@ -46,7 +51,8 @@ public class AdminUsersPage {
 	public String togetbackGroundColorofButton() {
 		return(PageUtility.getcssValueofElement(resetButtonElement,"background-color"));
 	}
-	public void clickOnAdminUsersLink() {
+	public AdminUsersPage clickOnAdminUsersLink() {
 		PageUtility.clickOnElement(adminUsersLinkElement);
+		return this;
 	}
 }

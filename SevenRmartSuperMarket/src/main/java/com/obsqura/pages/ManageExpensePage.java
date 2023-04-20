@@ -21,28 +21,34 @@ public class ManageExpensePage {
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/expense' and @class='small-box-footer']")WebElement manageExpenseLinkElement;
 	@FindBy (xpath = "(//i[@class='fas fa-trash-alt'])[1]") WebElement deleteIconElement;
 	
-	public void enterUserName(String username) { 
+	public ManageExpensePage enterUserName(String username) { 
 		PageUtility.enterText(usernameTextBoxElement, username);
+		return this;
 	}
-	public void enterPassword(String password) {
+	public ManageExpensePage enterPassword(String password) {
 		PageUtility.enterText(passwordTextBoxElement, password);
+		return this;
 	}
-	public void clickOnSignInButton() {
+	public ManageExpensePage clickOnSignInButton() {
 		PageUtility.clickOnElement(signInButtonElement);
+		return this;
 	}
-	public void clickOnmanageExpenseLink() {
+	public ManageExpensePage clickOnmanageExpenseLink() {
 		PageUtility.clickOnElement(manageExpenseLinkElement);
+		return this;
 	}
-	public void clickOnDeleteIcon() {
+	public ManageExpensePage clickOnDeleteIcon() {
 		PageUtility.clickOnElement(deleteIconElement);
+		return this;
 	}
 	public String getAlertboxText() {
 		WaitUtility.waitForAlterIsPresent(driver);
 		return PageUtility.getAlertBoxText(driver);
 	}
-	public void toClickCancelButton() {
+	public ManageExpensePage toClickCancelButton() {
 		WaitUtility.waitForAlterIsPresent(driver);
 		PageUtility.alertCancelButton(driver);
+		return this;
 	}
 	public Alert tocheckAlertisPresent() {
 		Alert alertIsPresent= WaitUtility.IsAlterIsPresent(driver);

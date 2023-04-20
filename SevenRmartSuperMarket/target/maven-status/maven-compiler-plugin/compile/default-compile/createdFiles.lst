@@ -1,0 +1,14 @@
+utilities\ScreenshotUtility.class
+utilities\FakerUtility.class
+utilities\ExtentReportUtility.class
+utilities\ExcelUtility.class
+utilities\PageUtility.class
+com\obsqura\pages\ManageProductPage.class
+com\obsqura\pages\ManageSliderPage.class
+com\obsqura\pages\LoginPage.class
+com\obsqura\pages\AdminUsersPage.class
+com\obsqura\pages\DashBoardPage.class
+com\obsqura\pages\ManagePagesPage.class
+com\obsqura\pages\ManageExpensePage.class
+utilities\WaitUtility.class
+constants\Constants.class

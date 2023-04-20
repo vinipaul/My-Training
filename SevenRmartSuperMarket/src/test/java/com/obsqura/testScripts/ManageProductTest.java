@@ -15,29 +15,29 @@ import utilities.PageUtility;
 
 public class ManageProductTest extends Base {
 	ManageProductPage manageProductPage;
-	@Test (groups = {"Regression"})
+	@Test (groups = {"Regression"},retryAnalyzer = Retry.class)
 	public void verify_nonVegRadioButtonIsSelectable() throws IOException {
 		manageProductPage=new ManageProductPage(driver);
-	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-		manageProductPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-		manageProductPage.clickOnSignInButton();
-		manageProductPage.clickOnManageProductLink();
-		manageProductPage.clickonNewButton();
+	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.clickOnSignInButton()
+		.clickOnManageProductLink()
+		.clickonNewButton();
 		boolean isRadioButtonSelected=manageProductPage.nonVegRadioButtonIsSelected();
 		assertFalse(isRadioButtonSelected,"Found NonVeg is already selected");
 		manageProductPage.clickOnNonvegRadioButton();
 		assertTrue(manageProductPage.nonVegRadioButtonIsSelected(),"Failed To select");
 		}
-	@Test(groups = {"Regression","Sanity"})
+	@Test(groups = {"Regression","Sanity"},retryAnalyzer = Retry.class)
 	public void verify_weightUnitDropdownisWorking() throws IOException {
 		String expectedResult=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageProduct_Page");
 		manageProductPage=new ManageProductPage(driver);
-	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-		manageProductPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-		manageProductPage.clickOnSignInButton();
-		manageProductPage.clickOnManageProductLink();
-		manageProductPage.clickonNewButton();
-		manageProductPage.toSelectfromDropDown();
+	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.clickOnSignInButton()
+		.clickOnManageProductLink()
+		.clickonNewButton()
+		.toSelectfromDropDown();
 		String actualResult= manageProductPage.getdropdownText();
 		assertEquals(actualResult, expectedResult,"Result not "+expectedResult);
 	}

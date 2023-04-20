@@ -19,13 +19,11 @@ import utilities.WaitUtility;
 
 public class LoginTest extends Base {
 	public LoginPage loginPage;
-	@Test(dataProvider = "LoginProvider")
+	@Test(dataProvider = "LoginProvider",retryAnalyzer = Retry.class)
 	public void verify_login_with_Credentials(String username,String password) throws IOException {
 		String expectedurl=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login");
 		loginPage=new LoginPage(driver);
-		loginPage.enterUserName(username);
-		loginPage.enterPassword(password);
-		loginPage.clickOnSignInButton();
+		loginPage.enterUserName(username).enterPassword(password).clickOnSignInButton();
 		String actualUrl=driver.getCurrentUrl();
 		assertEquals(actualUrl,expectedurl,"Login failed" );
 		}
@@ -36,17 +34,17 @@ public class LoginTest extends Base {
 	            {"admin","admin"}
 	        };
 		}
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void verify_SignIn_Button_Text_AlignmentIsCenter() throws IOException {
 		String expectedTextAlignment=ExcelUtility.getString(2, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login");
 		loginPage=new LoginPage(driver);
 		String actualTextAlignment=loginPage.signInButtonTextAlignment();
-		assertEquals(expectedTextAlignment,actualTextAlignment,"Alignment is not "+expectedTextAlignment);
+		assertEquals(expectedTextAlignment,actualTextAlignment,"Sign In Button text alignment expected center but found "+actualTextAlignment);
 		}
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void verify_RememberMeCheckBox_Is_Selected() {
 		loginPage =new LoginPage(driver);
 		boolean actualResult=loginPage.isRemembermeCheckboxisSelected();
-		assertFalse(actualResult,"Rememeber me checkbox is Selected");
+		assertFalse(actualResult,"Rememeber me checkbox is already Selected");
 	}
 }

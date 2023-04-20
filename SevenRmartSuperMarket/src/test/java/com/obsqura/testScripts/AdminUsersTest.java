@@ -17,29 +17,29 @@ import utilities.WaitUtility;
 
 public class AdminUsersTest extends Base {
 	public AdminUsersPage adminUsersPage;
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void verify_usertypeDropdownBoxIsSelectable() throws IOException {
 		String expectedResult=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"AdminUsers_page");
 		adminUsersPage=new AdminUsersPage(driver);
-		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-		adminUsersPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-	    adminUsersPage.clickOnSignInButton();
-	    adminUsersPage.clickOnAdminUsersLink();
-		adminUsersPage.clickonNewButton();
-		adminUsersPage.toSelectFromDropDown();
+		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.clickOnSignInButton()
+		.clickOnAdminUsersLink()
+		.clickonNewButton()
+		.toSelectFromDropDown();
 		String actualResult=adminUsersPage.dropdownvalue();
-		assertTrue(actualResult.contains(expectedResult),expectedResult+" not found");
+		assertTrue(actualResult.contains(expectedResult),expectedResult+" not found in drop down list.");
 	}
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void verify_resetButtonBackgroundColor() throws IOException {
 		String expectedBackGroundColor=ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"AdminUsers_page");
 		adminUsersPage=new AdminUsersPage(driver);
-		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-		adminUsersPage.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")));
-	    adminUsersPage.clickOnSignInButton();
-	    adminUsersPage.clickOnAdminUsersLink();
+		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.clickOnSignInButton()
+		.clickOnAdminUsersLink();
 		String actualColor=adminUsersPage.togetbackGroundColorofButton();
-		assertEquals(actualColor, expectedBackGroundColor,"BackGround Color is not "+expectedBackGroundColor);
+		assertEquals(actualColor, expectedBackGroundColor,"Reset Button BackGround Color expected to be in "+expectedBackGroundColor+" but found "+actualColor);
 		
 	}
 }

@@ -24,50 +24,58 @@ public ManagePagesPage(WebDriver driver) {
 @FindBy (xpath = "//input[@placeholder='Username']") WebElement usernameTextBoxElement;
 @FindBy (xpath = "//input[@name='password']") WebElement passwordTextBoxElement;
 @FindBy (xpath = "//button[text()='Sign In']") WebElement signInButtonElement;
-@FindBy(xpath = "(//div[contains(@class,'col-lg-3 col-6')]//a)[1]") WebElement managepagesLinkElement;
+@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-page' and @class='small-box-footer']") WebElement managepagesLinkElement;
 @FindBy(xpath = "(//tbody//child::tr//td)[1]") WebElement firstPageTitle;
 
-public void enterUserName(String username) {
+public ManagePagesPage enterUserName(String username) {
 	PageUtility.enterText(usernameTextBoxElement, username);
+	return this;
 }
-public void enterPassword(String password) {
+public ManagePagesPage enterPassword(String password) {
 	PageUtility.enterText(passwordTextBoxElement, password);
+	return this;
 }
-public void clickOnSignInButton() {
+public ManagePagesPage clickOnSignInButton() {
 	PageUtility.clickOnElement(signInButtonElement);
+	return this;
 }
-public void clickonNewButton() {
+public ManagePagesPage clickonNewButton() {
 	PageUtility.clickOnElement(newButtonElement);
+	return this;
 }
-public boolean isNewButtonEnabled() {
-	return PageUtility.isElementEnabled(newButtonElement);
-}
-public void toEnterTitle(String title) {
+public ManagePagesPage toEnterTitle(String title) {
 	PageUtility.clearText(titleElement);
 	WaitUtility.waitForvisibilityOfElement(driver, titleElement);
 	PageUtility.enterText(titleElement, title);
+	return this;
 }
-public void toEnterPage(String page) {
+public ManagePagesPage toEnterPage(String page) {
 	WaitUtility.waitForvisibilityOfElement(driver,pageElement);
 	PageUtility.enterText(pageElement, page);
+	return this;
 }
-public void clickOnSaveButton() {
+public ManagePagesPage clickOnSaveButton() {
 	PageUtility.clickOnElement(saveButtonElement);
+	return this;
 }
-public void clickOnSearchButton() {
+public ManagePagesPage clickOnSearchButton() {
 	PageUtility.clickOnElement(searchButtonElement);
+	return this;
 }
-public void clickOnManagePagesLink() {
+public ManagePagesPage clickOnManagePagesLink() {
 	PageUtility.clickOnElement(managepagesLinkElement);
+	return this;
 }
-public void toentertitletoSearch(String searchTitle) {
+public ManagePagesPage toentertitletoSearch(String searchTitle) {
 	WaitUtility.waitForvisibilityOfElement(driver, ListPageSearchButtonElement);
 	PageUtility.enterText(ListPageTitleTextBoxElement, searchTitle);
+	return this;
 	}
 
-public void clickOnListPageSearchButton() {
+public ManagePagesPage clickOnListPageSearchButton() {
 	PageUtility.clickOnElement(ListPageSearchButtonElement);
 	WaitUtility.waitForvisibilityOfElement(driver, ListPageSearchButtonElement);
+	return this;
 }
 public boolean toKnowResult() {
 	boolean isPresent=PageUtility.isElementDisplayed(resultNotFoundElement);

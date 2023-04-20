@@ -58,29 +58,18 @@ public class Base {
 			  options.addArguments("--remote-allow-origins=*");
 			  driver= new FirefoxDriver(options);
 		}
-		else if(browser.equalsIgnoreCase("chrome")) 
+		else if(browser.equalsIgnoreCase("Chrome")) 
 		{
-			/*
-			 * ChromeOptions chromeOptions = new ChromeOptions();
-			 * chromeOptions.addArguments("--remote-allow-origins=*");
-			 * WebDriverManager.chromedriver().create(); driver = new
-			 * ChromeDriver(chromeOptions);
-			 */
-			
-			
-			  System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+
-			  constants.Constants.chromedriverpath); ChromeOptions options = new
-			  ChromeOptions(); options.addArguments("--remote-allow-origins=*"); driver=new
-			  ChromeDriver(options);
-			 
+			  ChromeOptions chromeOptions = new ChromeOptions();
+			  chromeOptions.addArguments("--remote-allow-origins=*");
+			  driver = new ChromeDriver(chromeOptions);
 			 
 		} 
 		else if(browser.equalsIgnoreCase("Edge"))
 		{
-			  System.setProperty("webdriver.edge.driver",System.getProperty("user.dir")+constants.Constants.edgedriverpath);
-			  EdgeOptions options=new EdgeOptions();
-			  options.addArguments("--remote-allow-origins=*");
-			  driver= new EdgeDriver(options);
+			  EdgeOptions edgeOptions = new EdgeOptions();
+			  edgeOptions.addArguments("--remote-allow-origins=*");
+			  driver = new EdgeDriver(edgeOptions);
 		}
 		else 
 		{
