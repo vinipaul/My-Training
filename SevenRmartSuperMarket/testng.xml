@@ -8,14 +8,13 @@
   <parameter name="offercode" value="trynew20"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-   	  <!--<class name="com.obsqura.testScripts.ManageProductTest"/>
+   	  <class name="com.obsqura.testScripts.ManageProductTest"/>
       <class name="com.obsqura.testScripts.AdminUsersTest"/>
       <class name="com.obsqura.testScripts.LoginTest"/>
       <class name="com.obsqura.testScripts.ManagepageTest"/>
       <class name="com.obsqura.testScripts.ManageSliderTest"/>
       <class name="com.obsqura.testScripts.ManageExpenseTest"/>
-      <class name="com.obsqura.testScripts.ManageOfferCodeTest"/>-->
-        <class name="com.obsqura.testScripts.ManageSliderTest"/>
+      <class name="com.obsqura.testScripts.ManageOfferCodeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

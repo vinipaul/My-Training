@@ -22,8 +22,6 @@ public class ManageSliderPage {
 	@FindBy (xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-slider' and @class='small-box-footer']") WebElement manageSliderLinkElement;
 	@FindBy (xpath = "//a[@onclick='click_button(1)']") WebElement newButtonElement;
 	@FindBy (xpath = "//button[@class='close']//parent::div") WebElement alertElement;
-	@FindBy (xpath = "//input[@id='main_img']") WebElement choosefileButtonElement;
-	@FindBy (xpath = "//input[@id='link']") WebElement httpLinkElement;
 	@FindBy (xpath = "//button[@type='submit']") WebElement saveButtonElement;
 	@FindBy (xpath = "//div[@class='col-sm-6']//h1[text()]") WebElement listSlidersPageNameElement;
 	@FindBy (xpath = "(//a[@role='button'])[1]") WebElement statusButtonElement;
@@ -55,16 +53,6 @@ public class ManageSliderPage {
 		PageUtility.clickOnElement(manageSliderLinkElement);
 		return this;
 	}
-	public ManageSliderPage imageFileUpload() throws IOException {
-		PageUtility.clickOnElement(choosefileButtonElement);
-	    Runtime.getRuntime().exec("C:\\Program Files (x86)\\AutoIt3\\ImageSmiley.exe"); 
-	    return this;
-	}
-	public ManageSliderPage toEnterLink(String httpLink) {
-		WaitUtility.waitForvisibilityOfElement(driver, httpLinkElement);
-		PageUtility.enterText(httpLinkElement,httpLink );
-		return this;
-		}
 	public ManageSliderPage clickOnSaveButton() {
 		WaitUtility.waitForElementClickable(driver,saveButtonElement);
 		saveButtonElement.click();

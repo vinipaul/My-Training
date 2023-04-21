@@ -26,6 +26,8 @@ public class ManageOfferCodePage {
 	@FindBy (xpath = "//button[@type='submit']") WebElement searchSubmitButtElement;
 	@FindBy (xpath = "//tbody//child::tr") WebElement foundofferCodElement;
 	
+	By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
+	
 	public ManageOfferCodePage enterUserName(String username) {
 		WaitUtility.waitForvisibilityOfElement(driver, usernameTextBoxElement);
 		PageUtility.enterText(usernameTextBoxElement, username);
@@ -64,7 +66,7 @@ public class ManageOfferCodePage {
 	}
 	public boolean searchInTheTable(String offercode) {
 		String offercodeText="";
-		List<WebElement> columnElements=driver.findElements(By.xpath("//tbody//child::tr//child::td"));
+		List<WebElement> columnElements=driver.findElements(TableValuesBy);
 		for (WebElement columnElement:columnElements) {
 	    offercodeText= columnElement.getText();
 	    break;

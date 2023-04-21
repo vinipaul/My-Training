@@ -13,19 +13,7 @@ import utilities.ExcelUtility;
 
 public class ManageSliderTest  extends Base{
 	public ManageSliderPage manageSliderPage;
-	//@Test(retryAnalyzer = Retry.class)
-	public void verify_file_uploads_when_choosefile_Button_Clicked() throws IOException {
-		manageSliderPage=new ManageSliderPage(driver);
-		manageSliderPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.clickOnSignInButton()
-		.clickOnManageSliderLink()
-		.clickonNewButton()
-		.imageFileUpload()
-	    .toEnterLink(ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"MangeSlider_Page"))
-		.clickOnSaveButton();
-	}
-	//@Test(retryAnalyzer = Retry.class)
+	@Test(retryAnalyzer = Retry.class)
 	public void verify_manageSliderLink_navigatedto_ListSliderPage() throws IOException {
 		manageSliderPage=new ManageSliderPage(driver);
 		String expectedPageHeader=ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"MangeSlider_Page");
@@ -34,7 +22,7 @@ public class ManageSliderTest  extends Base{
 		.clickOnSignInButton()
 		.clickOnManageSliderLink();
 		String actualPageHeader= manageSliderPage.toGetNameOfTheDirectedPage();
-		assertEquals(actualPageHeader,expectedPageHeader,"not navigated to "+expectedPageHeader+" page");
+		assertEquals(actualPageHeader,expectedPageHeader,"Not navigated to "+expectedPageHeader+" page");
 	}
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_StatusChanged_Successfully_in_The_Table() throws IOException {

@@ -30,6 +30,8 @@ public ManagePagesPage(WebDriver driver) {
 @FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-page' and @class='small-box-footer']") WebElement managepagesLinkElement;
 @FindBy(xpath = "((//tbody//tr)[1]//child::td)[4]") WebElement newlyAddedPageElement;
 
+By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
+
 public ManagePagesPage enterUserName(String username) {
 	PageUtility.enterText(usernameTextBoxElement, username);
 	return this;
@@ -96,7 +98,7 @@ public String checknewlyAddedPageIntheTable() {
 	}
 public boolean searchInTheTable(String searchTitle) {
 	String searchTitleText="";
-	List<WebElement> columnElements=driver.findElements(By.xpath("//tbody//child::tr//child::td"));
+	List<WebElement> columnElements=driver.findElements(TableValuesBy);
 	for (WebElement columnElement:columnElements) {
     searchTitleText= columnElement.getText();
     break;
