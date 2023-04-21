@@ -1,5 +1,8 @@
 package com.obsqura.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +28,7 @@ public ManagePagesPage(WebDriver driver) {
 @FindBy (xpath = "//input[@name='password']") WebElement passwordTextBoxElement;
 @FindBy (xpath = "//button[text()='Sign In']") WebElement signInButtonElement;
 @FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-page' and @class='small-box-footer']") WebElement managepagesLinkElement;
-@FindBy(xpath = "(//tbody//child::tr//td)[1]") WebElement firstPageTitle;
+@FindBy(xpath = "((//tbody//tr)[1]//child::td)[4]") WebElement newlyAddedPageElement;
 
 public ManagePagesPage enterUserName(String username) {
 	PageUtility.enterText(usernameTextBoxElement, username);
@@ -82,15 +85,27 @@ public boolean toKnowResult() {
 	return isPresent;
 }
 public String checknewlyAddedPageIntheTable() {
-	driver.navigate().back();
-	driver.navigate().back();
-	boolean isDisaplayed= PageUtility.isElementDisplayed(firstPageTitle);
-	if(isDisaplayed==true) {
-		return PageUtility.getElementText(firstPageTitle);
-	}else {
-		return "not found";
+		driver.navigate().back();
+		driver.navigate().back();
+		boolean isDisaplayed= PageUtility.isElementDisplayed(newlyAddedPageElement);
+		if(isDisaplayed==true) {
+			return PageUtility.getElementText(newlyAddedPageElement);
+		}else{
+			return "not found";
+		}
 	}
-	
+public boolean searchInTheTable(String searchTitle) {
+	String searchTitleText="";
+	List<WebElement> columnElements=driver.findElements(By.xpath("//tbody//child::tr//child::td"));
+	for (WebElement columnElement:columnElements) {
+    searchTitleText= columnElement.getText();
+    break;
+	}
+	if(searchTitleText.equalsIgnoreCase(searchTitle))
+		return true;
+	else {
+		return false;
+	}		
 }
 }
 	

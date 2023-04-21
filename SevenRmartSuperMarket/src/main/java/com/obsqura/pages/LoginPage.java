@@ -17,7 +17,8 @@ public LoginPage(WebDriver driver) {
 @FindBy (xpath = "//input[@placeholder='Username']") WebElement usernameTextBoxElement;
 @FindBy (xpath = "//input[@name='password']") WebElement passwordTextBoxElement;
 @FindBy (xpath = "//button[text()='Sign In']") WebElement signInButtonElement;
-@FindBy(xpath = "//input[@id='remember']") WebElement remembermeCheckboxElement;
+@FindBy (xpath = "//input[@id='remember']") WebElement remembermeCheckboxElement;
+@FindBy (xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-page' and  @class='small-box-footer']") WebElement moreInfoLinkElement;
 
 public LoginPage enterUserName(String username) {
 	WaitUtility.waitForvisibilityOfElement(driver,usernameTextBoxElement);
@@ -42,4 +43,33 @@ public String signInButtonTextAlignment() {
 public boolean isRemembermeCheckboxisSelected() {
 	return(PageUtility.isElementSelected(remembermeCheckboxElement));
 }
+public boolean isExpectedPageElementPresent() {
+	WaitUtility.waitForvisibilityOfElement(driver, moreInfoLinkElement);
+	return  PageUtility.isElementDisplayed(moreInfoLinkElement);
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

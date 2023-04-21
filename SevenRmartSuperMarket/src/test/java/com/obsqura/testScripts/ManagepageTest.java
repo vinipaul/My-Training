@@ -23,11 +23,11 @@ public void verify_newButton_allowstoAddPageswith_new_page_and_title() throws IO
 	 managePagesPage.toEnterTitle(title)
 	 .toEnterPage(page)
 	 .clickOnSaveButton();
-	 String actualTitle= managePagesPage.checknewlyAddedPageIntheTable();
-	 assertEquals(actualTitle, title,"failed to add");
+	 String actualPage= managePagesPage.checknewlyAddedPageIntheTable();
+	 assertEquals(actualPage, page," new page failed to add in the table");
 }
 @Test(priority = 2, retryAnalyzer = Retry.class)
-public void verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage() throws IOException{
+public void verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage() throws IOException{
 	  managePagesPage=new ManagePagesPage(driver); 
 	  String searchTitle=FakerUtility.fakeFirstName();
 	  managePagesPage.enterUserName(ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login"))
@@ -38,6 +38,20 @@ public void verify_searchButton_shows_ResultNotFoundWhensearch_NonexistingPage()
 	  .toentertitletoSearch(searchTitle)
 	  .clickOnListPageSearchButton();
 	  assertTrue(managePagesPage.toKnowResult(),"Result found");
+	  
+}
+@Test(priority = 3, retryAnalyzer = Retry.class)
+public void verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage() throws IOException{
+	  managePagesPage=new ManagePagesPage(driver); 
+	  String searchTitle=ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManagePages_Page");
+	  managePagesPage.enterUserName(ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login"))
+	  .enterPassword(ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login"))
+      .clickOnSignInButton()
+	  .clickOnManagePagesLink()
+	  .clickOnSearchButton()
+	  .toentertitletoSearch(searchTitle)
+	  .clickOnListPageSearchButton();
+	  assertTrue(managePagesPage.searchInTheTable(searchTitle),searchTitle +" is not in the Table");
 	  
 }
 }

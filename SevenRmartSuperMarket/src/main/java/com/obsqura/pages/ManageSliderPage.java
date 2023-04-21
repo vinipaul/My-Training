@@ -67,7 +67,7 @@ public class ManageSliderPage {
 		}
 	public ManageSliderPage clickOnSaveButton() {
 		WaitUtility.waitForElementClickable(driver,saveButtonElement);
-		PageUtility.clickOnElement(saveButtonElement);
+		saveButtonElement.click();
 		return this;
 	}
 	public String toGetNameOfTheDirectedPage() {
@@ -76,12 +76,17 @@ public class ManageSliderPage {
 	}
 	public ManageSliderPage clickOnStatusButton() {
 		WaitUtility.waitForElementClickable(driver,statusButtonElement);
-		PageUtility.clickOnElement(statusButtonElement);
+		statusButtonElement.click();
 		return this;
 		}
-	public boolean isAlertPresent() {
-		WaitUtility.waitForvisibilityOfElement(driver,statusAlertElement);
-		boolean isAlertDisplayed= PageUtility.isElementDisplayed(statusAlertElement);
-		return isAlertDisplayed;
+	public String beforeChange() {
+		String statusBeforeChanging= PageUtility.getElementText(statusButtonElement);
+		return statusBeforeChanging;
 	}
+	public String afterChange() {
+		statusButtonElement.click();
+		String statusAfterChanging= PageUtility.getElementText(statusButtonElement);
+		return statusAfterChanging;
+	}
+	
 }

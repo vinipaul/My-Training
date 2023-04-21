@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.obsqura.pages.LoginPage;
 
+import io.netty.util.Signal;
 import utilities.ExcelUtility;
 import utilities.PageUtility;
 import utilities.WaitUtility;
@@ -21,11 +22,9 @@ public class LoginTest extends Base {
 	public LoginPage loginPage;
 	@Test(dataProvider = "LoginProvider",retryAnalyzer = Retry.class)
 	public void verify_login_with_Credentials(String username,String password) throws IOException {
-		String expectedurl=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login");
 		loginPage=new LoginPage(driver);
 		loginPage.enterUserName(username).enterPassword(password).clickOnSignInButton();
-		String actualUrl=driver.getCurrentUrl();
-		assertEquals(actualUrl,expectedurl,"Login failed" );
+		assertTrue(loginPage.isExpectedPageElementPresent(),"Sign In Failed");
 		}
 		@DataProvider(name="LoginProvider")
 	    public Object[][] getDataFromDataprovider(){

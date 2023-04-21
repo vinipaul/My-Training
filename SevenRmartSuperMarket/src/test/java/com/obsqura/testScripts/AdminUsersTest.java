@@ -5,15 +5,11 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.obsqura.pages.AdminUsersPage;
-import com.obsqura.pages.DashBoardPage;
 
 import utilities.ExcelUtility;
-import utilities.PageUtility;
-import utilities.WaitUtility;
 
 public class AdminUsersTest extends Base {
 	public AdminUsersPage adminUsersPage;
