@@ -29,7 +29,7 @@ public class AdminUsersTest extends Base {
 		assertTrue(adminUsersPage.checkInTtheTable(newUserName),"New Admin User Details Added Successfully");
 	}
 	@Test(retryAnalyzer = Retry.class)
-	public void verify_resetButtonBackgroundColor() throws IOException {
+	public void verify_resetButton_BackgroundColor() throws IOException {
 		String expectedBackGroundColor=ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"AdminUsers_page");
 		adminUsersPage=new AdminUsersPage(driver);
 		adminUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))

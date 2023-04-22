@@ -44,6 +44,10 @@ public ManagePagesPage clickOnSignInButton() {
 	PageUtility.clickOnElement(signInButtonElement);
 	return this;
 }
+public ManagePagesPage clickOnManagePagesLink() {
+	PageUtility.clickOnElement(managepagesLinkElement);
+	return this;
+}
 public ManagePagesPage clickonNewButton() {
 	PageUtility.clickOnElement(newButtonElement);
 	return this;
@@ -65,10 +69,6 @@ public ManagePagesPage clickOnSaveButton() {
 }
 public ManagePagesPage clickOnSearchButton() {
 	PageUtility.clickOnElement(searchButtonElement);
-	return this;
-}
-public ManagePagesPage clickOnManagePagesLink() {
-	PageUtility.clickOnElement(managepagesLinkElement);
 	return this;
 }
 public ManagePagesPage toentertitletoSearch(String searchTitle) {
@@ -107,7 +107,7 @@ public boolean searchInTheTable(String searchTitle) {
 		return true;
 	else {
 		return false;
-	}		
-}
+		}		
+	}
 }
 	
