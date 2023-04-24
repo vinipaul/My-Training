@@ -18,59 +18,59 @@ public class AdminUsersPage {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy (xpath = "//input[@placeholder='Username']") WebElement usernameTextBoxElement;
-	@FindBy (xpath = "//input[@name='password']") WebElement passwordTextBoxElement;
-	@FindBy (xpath = "//button[text()='Sign In']") WebElement signInButtonElement;
-	@FindBy (xpath = "//a[contains(@class,'btn btn-rounded btn-danger')]") WebElement newButtonElement;
+	@FindBy (xpath = "//input[@placeholder='Username']") WebElement usernameTextBox;
+	@FindBy (xpath = "//input[@name='password']") WebElement passwordTextBox;
+	@FindBy (xpath = "//button[text()='Sign In']") WebElement signInButton;
+	@FindBy (xpath = "//a[contains(@class,'btn btn-rounded btn-danger')]") WebElement newButton;
 	@FindBy (xpath = "//select[@id='user_type']") WebElement usertypedropdownElement;
-	@FindBy (xpath = "//a[contains(@class,'btn btn-rounded btn-warning')]") WebElement resetButtonElement;
-	@FindBy (xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and  @class='small-box-footer']") WebElement adminUsersLinkElement;
-	@FindBy (xpath = "//input[@id='username']") WebElement newUsernameTextBoxElement;
-	@FindBy (xpath = "//input[@id='password']") WebElement newPasswordElement;
-	@FindBy (xpath = "//button[@name='Create']") WebElement newUserSaveButtonElement;
+	@FindBy (xpath = "//a[contains(@class,'btn btn-rounded btn-warning')]") WebElement resetButton;
+	@FindBy (xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and  @class='small-box-footer']") WebElement adminUsersLink;
+	@FindBy (xpath = "//input[@id='username']") WebElement newUsernameTextBox;
+	@FindBy (xpath = "//input[@id='password']") WebElement newPassword;
+	@FindBy (xpath = "//button[@name='Create']") WebElement newUserSaveButton;
 		
 	By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
 	
 	public AdminUsersPage enterUserName(String username) {
-		PageUtility.enterText(usernameTextBoxElement, username);
+		PageUtility.enterText(usernameTextBox, username);
 		return this;
 	}
 	public AdminUsersPage enterPassword(String password) {
-		PageUtility.enterText(passwordTextBoxElement, password);
+		PageUtility.enterText(passwordTextBox, password);
 		return this;
 	}
 	public AdminUsersPage clickOnSignInButton() {
-		PageUtility.clickOnElement(signInButtonElement);
+		PageUtility.clickOnElement(signInButton);
 		return this;
 	}
 	public AdminUsersPage clickonNewButton() {
-		WaitUtility.waitForElementClickable(driver, newButtonElement);
-		PageUtility.clickOnElement(newButtonElement);
+		WaitUtility.waitForElementClickable(driver, newButton);
+		PageUtility.clickOnElement(newButton);
 		return this;
 	}
 	public String togetbackGroundColorofButton() {
-		return(PageUtility.getcssValueofElement(resetButtonElement,"background-color"));
+		return(PageUtility.getcssValueofElement(resetButton,"background-color"));
 	}
 	public AdminUsersPage clickOnAdminUsersLink() {
-		WaitUtility.waitForElementClickable(driver, adminUsersLinkElement);
-		PageUtility.clickOnElement(adminUsersLinkElement);
+		WaitUtility.waitForElementClickable(driver, adminUsersLink);
+		PageUtility.clickOnElement(adminUsersLink);
 		return this;
 	}
 	public AdminUsersPage enterNewUserName(String newUserName) {
-		WaitUtility.waitForvisibilityOfElement(driver,newUsernameTextBoxElement);
-		newUsernameTextBoxElement.sendKeys(newUserName);
+		WaitUtility.waitForvisibilityOfElement(driver,newUsernameTextBox);
+		newUsernameTextBox.sendKeys(newUserName);
 		return this;
 	}
 	public AdminUsersPage enterAdminUsersDetails() {
-		WaitUtility.waitForvisibilityOfElement(driver,newPasswordElement);
-		newPasswordElement.sendKeys(FakerUtility.fakePassword());
+		WaitUtility.waitForvisibilityOfElement(driver,newPassword);
+		newPassword.sendKeys(FakerUtility.fakePassword());
 		WaitUtility.waitForvisibilityOfElement(driver, usertypedropdownElement);
 		PageUtility.selectDropdownbyIndex(usertypedropdownElement, 2);
 		return this;
 	}
 	public AdminUsersPage clickOnSaveButton() {
-		WaitUtility.waitForElementClickable(driver, newUserSaveButtonElement);
-		newUserSaveButtonElement.click();
+		WaitUtility.waitForElementClickable(driver, newUserSaveButton);
+		newUserSaveButton.click();
 		return this;
 	}
 	public boolean checkInTtheTable(String newUserName) {

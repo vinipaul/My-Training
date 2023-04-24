@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="16" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-22T17:15:20 GST" name="Suite" finished-at="2023-04-22T17:17:12 GST" duration-ms="112159">
+  <suite started-at="2023-04-25T00:47:48 GST" name="Suite" finished-at="2023-04-25T00:49:43 GST" duration-ms="115017">
     <groups>
       <group name="Sanity">
-        <method signature="ManageExpenseTest.verify_Cofirmation_Alertbox_Cancel_Click()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" name="verify_Cofirmation_Alertbox_Cancel_Click" class="com.obsqura.testScripts.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" name="verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion" class="com.obsqura.testScripts.ManageExpenseTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
         <method signature="ManageExpenseTest.verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" name="verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked" class="com.obsqura.testScripts.ManageExpenseTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-04-22T17:15:20 GST" name="Test" finished-at="2023-04-22T17:17:12 GST" duration-ms="112159">
+    <test started-at="2023-04-25T00:47:48 GST" name="Test" finished-at="2023-04-25T00:49:43 GST" duration-ms="115017">
       <class name="com.obsqura.testScripts.ManageOfferCodeTest">
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4]" started-at="2023-04-22T17:16:57 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:17:02 GST" duration-ms="4203" status="PASS">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4]" started-at="2023-04-25T00:49:29 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:49:33 GST" duration-ms="4552" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,22 +24,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_seraching_With_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4]" started-at="2023-04-22T17:17:02 GST" name="verify_seraching_With_Offercode_Shows_Corressponding_Details" finished-at="2023-04-22T17:17:04 GST" duration-ms="2352" status="PASS">
+        <test-method signature="verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4]" started-at="2023-04-25T00:49:33 GST" name="verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details" finished-at="2023-04-25T00:49:36 GST" duration-ms="2180" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[trynew20]]>
+                <![CDATA[SUMMER50]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_seraching_With_Offercode_Shows_Corressponding_Details -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4]" started-at="2023-04-22T17:17:04 GST" name="browserQuit" finished-at="2023-04-22T17:17:04 GST" duration-ms="314" status="PASS">
+        </test-method> <!-- verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4]" started-at="2023-04-25T00:49:36 GST" name="browserQuit" finished-at="2023-04-25T00:49:36 GST" duration-ms="321" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_seraching_With_Offercode_Shows_Corressponding_Details status=SUCCESS method=ManageOfferCodeTest.verify_seraching_With_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4] output={null}]]]>
+                <![CDATA[[TestResult name=verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details status=SUCCESS method=ManageOfferCodeTest.verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageOfferCodeTest@307765b4] output={null}]]]>
               </value>
             </param>
           </params>
@@ -48,7 +48,7 @@
         </test-method> <!-- browserQuit -->
       </class> <!-- com.obsqura.testScripts.ManageOfferCodeTest -->
       <class name="com.obsqura.testScripts.PushNotificationsTest">
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.PushNotificationsTest@4a9e6faf]" started-at="2023-04-22T17:17:04 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:17:10 GST" duration-ms="5477" status="PASS">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.PushNotificationsTest@4a9e6faf]" started-at="2023-04-25T00:49:36 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:49:40 GST" duration-ms="4210" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,11 +59,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked()[pri:0, instance:com.obsqura.testScripts.PushNotificationsTest@4a9e6faf]" started-at="2023-04-22T17:17:10 GST" name="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked" finished-at="2023-04-22T17:17:12 GST" duration-ms="2646" status="PASS">
+        <test-method signature="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked()[pri:0, instance:com.obsqura.testScripts.PushNotificationsTest@4a9e6faf]" started-at="2023-04-25T00:49:40 GST" name="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked" finished-at="2023-04-25T00:49:43 GST" duration-ms="2809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.PushNotificationsTest@4a9e6faf]" started-at="2023-04-22T17:17:12 GST" name="browserQuit" finished-at="2023-04-22T17:17:12 GST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.PushNotificationsTest@4a9e6faf]" started-at="2023-04-25T00:49:43 GST" name="browserQuit" finished-at="2023-04-25T00:49:43 GST" duration-ms="258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,62 +75,8 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.obsqura.testScripts.PushNotificationsTest -->
-      <class name="com.obsqura.testScripts.ManageExpenseTest">
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-22T17:16:45 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:49 GST" duration-ms="3904" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-22T17:16:49 GST" name="verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked" finished-at="2023-04-22T17:16:51 GST" duration-ms="1734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-22T17:16:51 GST" name="browserQuit" finished-at="2023-04-22T17:16:51 GST" duration-ms="259" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked status=SUCCESS method=ManageExpenseTest.verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-22T17:16:51 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:55 GST" duration-ms="4403" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_Cofirmation_Alertbox_Cancel_Click()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-22T17:16:55 GST" name="verify_Cofirmation_Alertbox_Cancel_Click" finished-at="2023-04-22T17:16:57 GST" duration-ms="1646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Cofirmation_Alertbox_Cancel_Click -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-22T17:16:57 GST" name="browserQuit" finished-at="2023-04-22T17:16:57 GST" duration-ms="341" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Cofirmation_Alertbox_Cancel_Click status=SUCCESS method=ManageExpenseTest.verify_Cofirmation_Alertbox_Cancel_Click()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.testScripts.ManageExpenseTest -->
       <class name="com.obsqura.testScripts.ManageSliderTest">
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-22T17:16:32 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:36 GST" duration-ms="4459" status="PASS">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-25T00:49:00 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:49:05 GST" duration-ms="4881" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,22 +87,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_StatusChanged_Successfully_in_The_Table()[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-22T17:16:36 GST" name="verify_StatusChanged_Successfully_in_The_Table" finished-at="2023-04-22T17:16:38 GST" duration-ms="2259" status="PASS">
+        <test-method signature="verify_Status_Changed_Successfully_in_The_Table()[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-25T00:49:05 GST" name="verify_Status_Changed_Successfully_in_The_Table" finished-at="2023-04-25T00:49:08 GST" duration-ms="2576" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_StatusChanged_Successfully_in_The_Table -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-22T17:16:38 GST" name="browserQuit" finished-at="2023-04-22T17:16:39 GST" duration-ms="295" status="PASS">
+        </test-method> <!-- verify_Status_Changed_Successfully_in_The_Table -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-25T00:49:08 GST" name="browserQuit" finished-at="2023-04-25T00:49:08 GST" duration-ms="244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_StatusChanged_Successfully_in_The_Table status=SUCCESS method=ManageSliderTest.verify_StatusChanged_Successfully_in_The_Table()[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Status_Changed_Successfully_in_The_Table status=SUCCESS method=ManageSliderTest.verify_Status_Changed_Successfully_in_The_Table()[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-22T17:16:39 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:43 GST" duration-ms="4128" status="PASS">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-25T00:49:08 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:49:12 GST" duration-ms="3930" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,11 +113,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_manageSliderLink_navigatedto_ListSliderPage()[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-22T17:16:43 GST" name="verify_manageSliderLink_navigatedto_ListSliderPage" finished-at="2023-04-22T17:16:45 GST" duration-ms="1863" status="PASS">
+        <test-method signature="verify_manageSliderLink_navigatedto_ListSliderPage()[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-25T00:49:12 GST" name="verify_manageSliderLink_navigatedto_ListSliderPage" finished-at="2023-04-25T00:49:14 GST" duration-ms="1907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_manageSliderLink_navigatedto_ListSliderPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-22T17:16:45 GST" name="browserQuit" finished-at="2023-04-22T17:16:45 GST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageSliderTest@7a138fc5]" started-at="2023-04-25T00:49:14 GST" name="browserQuit" finished-at="2023-04-25T00:49:14 GST" duration-ms="256" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,8 +129,8 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.obsqura.testScripts.ManageSliderTest -->
-      <class name="com.obsqura.testScripts.AdminUsersTest">
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-22T17:15:20 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:15:27 GST" duration-ms="6470" status="PASS">
+      <class name="com.obsqura.testScripts.ManageExpenseTest">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-25T00:49:14 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:49:18 GST" duration-ms="3938" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,11 +141,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked()[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-22T17:15:27 GST" name="verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked" finished-at="2023-04-22T17:15:31 GST" duration-ms="4265" status="PASS">
+        <test-method signature="verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-25T00:49:18 GST" name="verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked" finished-at="2023-04-25T00:49:20 GST" duration-ms="2056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-25T00:49:20 GST" name="browserQuit" finished-at="2023-04-25T00:49:20 GST" duration-ms="246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked status=SUCCESS method=ManageExpenseTest.verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-25T00:49:20 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:49:26 GST" duration-ms="5812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toInitializeBrowser -->
+        <test-method signature="verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-25T00:49:26 GST" name="verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion" finished-at="2023-04-25T00:49:29 GST" duration-ms="2314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b]" started-at="2023-04-25T00:49:29 GST" name="browserQuit" finished-at="2023-04-25T00:49:29 GST" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion status=SUCCESS method=ManageExpenseTest.verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion()[pri:0, instance:com.obsqura.testScripts.ManageExpenseTest@379ab47b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.testScripts.ManageExpenseTest -->
+      <class name="com.obsqura.testScripts.AdminUsersTest">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-25T00:47:48 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:47:56 GST" duration-ms="8038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toInitializeBrowser -->
+        <test-method signature="verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked()[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-25T00:47:56 GST" name="verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked" finished-at="2023-04-25T00:48:02 GST" duration-ms="5271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-22T17:15:31 GST" name="browserQuit" finished-at="2023-04-22T17:15:32 GST" duration-ms="386" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-25T00:48:02 GST" name="browserQuit" finished-at="2023-04-25T00:48:02 GST" duration-ms="374" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,7 +210,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-22T17:15:32 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:15:36 GST" duration-ms="4380" status="PASS">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-25T00:48:02 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:07 GST" duration-ms="5095" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,11 +221,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_resetButton_BackgroundColor()[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-22T17:15:36 GST" name="verify_resetButton_BackgroundColor" finished-at="2023-04-22T17:15:38 GST" duration-ms="1787" status="PASS">
+        <test-method signature="verify_resetButton_BackgroundColor()[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-25T00:48:07 GST" name="verify_resetButton_BackgroundColor" finished-at="2023-04-25T00:48:09 GST" duration-ms="1754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_resetButton_BackgroundColor -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-22T17:15:38 GST" name="browserQuit" finished-at="2023-04-22T17:15:38 GST" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.AdminUsersTest@7caa550]" started-at="2023-04-25T00:48:09 GST" name="browserQuit" finished-at="2023-04-25T00:48:09 GST" duration-ms="307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,8 +237,8 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.obsqura.testScripts.AdminUsersTest -->
-      <class name="com.obsqura.testScripts.LoginTest">
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:38 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:15:42 GST" duration-ms="3992" status="PASS">
+      <class name="com.obsqura.testScripts.ManagepageTest">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:33 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:38 GST" duration-ms="4696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -249,11 +249,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_RememberMe_CheckBox_Is_Selected()[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:42 GST" name="verify_RememberMe_CheckBox_Is_Selected" finished-at="2023-04-22T17:15:42 GST" duration-ms="83" status="PASS">
+        <test-method signature="verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:38 GST" name="verify_newButton_allowstoAddPageswith_new_page_and_title" finished-at="2023-04-25T00:48:43 GST" duration-ms="5218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_newButton_allowstoAddPageswith_new_page_and_title -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:43 GST" name="browserQuit" finished-at="2023-04-25T00:48:43 GST" duration-ms="332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_newButton_allowstoAddPageswith_new_page_and_title status=SUCCESS method=ManagepageTest.verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:43 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:50 GST" duration-ms="6109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toInitializeBrowser -->
+        <test-method signature="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage()[pri:2, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:50 GST" name="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage" finished-at="2023-04-25T00:48:52 GST" duration-ms="2818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:52 GST" name="browserQuit" finished-at="2023-04-25T00:48:53 GST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage status=SUCCESS method=ManagepageTest.verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage()[pri:2, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:53 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:58 GST" duration-ms="4915" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toInitializeBrowser -->
+        <test-method signature="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage()[pri:3, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:48:58 GST" name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage" finished-at="2023-04-25T00:49:00 GST" duration-ms="2506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-25T00:49:00 GST" name="browserQuit" finished-at="2023-04-25T00:49:00 GST" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage status=SUCCESS method=ManagepageTest.verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage()[pri:3, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.testScripts.ManagepageTest -->
+      <class name="com.obsqura.testScripts.LoginTest">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:09 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:15 GST" duration-ms="5878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toInitializeBrowser -->
+        <test-method signature="verify_RememberMe_CheckBox_Is_Selected()[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:15 GST" name="verify_RememberMe_CheckBox_Is_Selected" finished-at="2023-04-25T00:48:15 GST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_RememberMe_CheckBox_Is_Selected -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:42 GST" name="browserQuit" finished-at="2023-04-22T17:15:42 GST" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:15 GST" name="browserQuit" finished-at="2023-04-25T00:48:15 GST" duration-ms="341" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -264,7 +344,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:42 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:15:47 GST" duration-ms="4242" status="PASS">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:15 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:20 GST" duration-ms="4221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -275,11 +355,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_SignIn_Button_Text_Alignment_Is_Center()[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:47 GST" name="verify_SignIn_Button_Text_Alignment_Is_Center" finished-at="2023-04-22T17:15:47 GST" duration-ms="136" status="PASS">
+        <test-method signature="verify_SignIn_Button_Text_Alignment_Is_Center()[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:20 GST" name="verify_SignIn_Button_Text_Alignment_Is_Center" finished-at="2023-04-25T00:48:20 GST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_SignIn_Button_Text_Alignment_Is_Center -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:47 GST" name="browserQuit" finished-at="2023-04-22T17:15:47 GST" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:20 GST" name="browserQuit" finished-at="2023-04-25T00:48:20 GST" duration-ms="446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -290,7 +370,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:47 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:15:51 GST" duration-ms="3986" status="PASS">
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:20 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:25 GST" duration-ms="4406" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -301,7 +381,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_login_with_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:51 GST" name="verify_login_with_Credentials" data-provider="LoginProvider" finished-at="2023-04-22T17:15:52 GST" duration-ms="1092" status="PASS">
+        <test-method signature="verify_login_with_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:25 GST" name="verify_login_with_Credentials" data-provider="LoginProvider" finished-at="2023-04-25T00:48:26 GST" duration-ms="950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -317,7 +397,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_with_Credentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-22T17:15:52 GST" name="browserQuit" finished-at="2023-04-22T17:15:53 GST" duration-ms="424" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:26 GST" name="browserQuit" finished-at="2023-04-25T00:48:26 GST" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_login_with_Credentials status=SUCCESS method=LoginTest.verify_login_with_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:26 GST" name="toInitializeBrowser" finished-at="2023-04-25T00:48:32 GST" duration-ms="5673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toInitializeBrowser -->
+        <test-method signature="verify_login_with_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:32 GST" name="verify_login_with_Credentials" data-provider="LoginProvider" finished-at="2023-04-25T00:48:33 GST" duration-ms="1300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_Credentials -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.LoginTest@4816c290]" started-at="2023-04-25T00:48:33 GST" name="browserQuit" finished-at="2023-04-25T00:48:33 GST" duration-ms="341" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,224 +447,6 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- com.obsqura.testScripts.LoginTest -->
-      <class name="com.obsqura.testScripts.ManagepageTest">
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:15:53 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:15:57 GST" duration-ms="4249" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toInitializeBrowser -->
-        <test-method retried="true" signature="verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:15:57 GST" name="verify_newButton_allowstoAddPageswith_new_page_and_title" finished-at="2023-04-22T17:16:02 GST" duration-ms="4617" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[ new page failed to add in the table expected [Papaya] but found [Strawberries]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError:  new page failed to add in the table expected [Papaya] but found [Strawberries]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.obsqura.testScripts.ManagepageTest.verify_newButton_allowstoAddPageswith_new_page_and_title(ManagepageTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_newButton_allowstoAddPageswith_new_page_and_title -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:02 GST" name="browserQuit" finished-at="2023-04-22T17:16:02 GST" duration-ms="258" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_newButton_allowstoAddPageswith_new_page_and_title status=SKIP method=ManagepageTest.verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:02 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:07 GST" duration-ms="4733" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toInitializeBrowser -->
-        <test-method retried="true" signature="verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:07 GST" name="verify_newButton_allowstoAddPageswith_new_page_and_title" finished-at="2023-04-22T17:16:11 GST" duration-ms="4253" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[ new page failed to add in the table expected [Oranges] but found [Strawberries]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError:  new page failed to add in the table expected [Oranges] but found [Strawberries]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.obsqura.testScripts.ManagepageTest.verify_newButton_allowstoAddPageswith_new_page_and_title(ManagepageTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_newButton_allowstoAddPageswith_new_page_and_title -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:11 GST" name="browserQuit" finished-at="2023-04-22T17:16:11 GST" duration-ms="249" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_newButton_allowstoAddPageswith_new_page_and_title status=SKIP method=ManagepageTest.verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:11 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:15 GST" duration-ms="3625" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:15 GST" name="verify_newButton_allowstoAddPageswith_new_page_and_title" finished-at="2023-04-22T17:16:19 GST" duration-ms="3864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_newButton_allowstoAddPageswith_new_page_and_title -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:19 GST" name="browserQuit" finished-at="2023-04-22T17:16:19 GST" duration-ms="275" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_newButton_allowstoAddPageswith_new_page_and_title status=SUCCESS method=ManagepageTest.verify_newButton_allowstoAddPageswith_new_page_and_title()[pri:1, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:19 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:23 GST" duration-ms="4088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage()[pri:2, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:23 GST" name="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage" finished-at="2023-04-22T17:16:25 GST" duration-ms="2026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:25 GST" name="browserQuit" finished-at="2023-04-22T17:16:25 GST" duration-ms="256" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage status=SUCCESS method=ManagepageTest.verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage()[pri:2, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="toInitializeBrowser(java.lang.String)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:25 GST" name="toInitializeBrowser" finished-at="2023-04-22T17:16:29 GST" duration-ms="4105" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toInitializeBrowser -->
-        <test-method signature="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage()[pri:3, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:29 GST" name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage" finished-at="2023-04-22T17:16:31 GST" duration-ms="2048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a]" started-at="2023-04-22T17:16:31 GST" name="browserQuit" finished-at="2023-04-22T17:16:32 GST" duration-ms="315" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage status=SUCCESS method=ManagepageTest.verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage()[pri:3, instance:com.obsqura.testScripts.ManagepageTest@4efcf8a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.testScripts.ManagepageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

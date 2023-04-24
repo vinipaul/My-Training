@@ -53,7 +53,7 @@ public class Base {
 		}
 		if(browser.equalsIgnoreCase("firefox")) 
 		{
-			  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+constants.Constants.geckodriverpath); 
+			  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+constants.Constants.GECKODRIVERPATH); 
 			  FirefoxOptions options=new FirefoxOptions();
 			  options.addArguments("--remote-allow-origins=*");
 			  driver= new FirefoxDriver(options);

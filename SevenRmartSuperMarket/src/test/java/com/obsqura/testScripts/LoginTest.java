@@ -7,15 +7,12 @@ import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.obsqura.pages.LoginPage;
+import com.obsqura.retry.Retry;
 
-import io.netty.util.Signal;
 import utilities.ExcelUtility;
-import utilities.PageUtility;
-import utilities.WaitUtility;
 
 
 public class LoginTest extends Base {
@@ -30,7 +27,8 @@ public class LoginTest extends Base {
 	    public Object[][] getDataFromDataprovider(){
 			return new Object[][] 
 	    	{
-	            {"admin","admin"}
+	            {"admin","admin"},
+	            {"Admin","admin"}
 	        };
 		}
 	@Test(retryAnalyzer = Retry.class)

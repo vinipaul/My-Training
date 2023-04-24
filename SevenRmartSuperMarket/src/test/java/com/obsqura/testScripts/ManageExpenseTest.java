@@ -1,19 +1,21 @@
 package com.obsqura.testScripts;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
 import org.testng.annotations.Test;
 
 import com.obsqura.pages.ManageExpensePage;
+import com.obsqura.retry.Retry;
 
 import utilities.ExcelUtility;
 
 public class ManageExpenseTest  extends Base{
-	
 	ManageExpensePage manageExpensePage;
-	@Test (groups = {"Regression"},retryAnalyzer = Retry.class)
+	
+	@Test (groups = {"Regression"},retryAnalyzer =Retry.class)
 	public void verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked() throws IOException{
 		manageExpensePage=new ManageExpensePage(driver);
 		String expectedText=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageExpense_Page");
@@ -26,14 +28,15 @@ public class ManageExpenseTest  extends Base{
 		assertEquals(expectedText, actualText,"Alert box Text is not "+expectedText);
 		}
 	@Test (groups = {"Sanity"},retryAnalyzer = Retry.class)
-	public void verify_Cofirmation_Alertbox_Cancel_Click() throws IOException {
+	public void verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion() throws IOException {
 		manageExpensePage=new ManageExpensePage(driver);
 		manageExpensePage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
 		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
 		.clickOnSignInButton()
 		.clickOnmanageExpenseLink()
 		.clickOnDeleteIcon()
-		.toClickCancelButton();
+		.ClickCancelButton();
+		assertTrue(manageExpensePage.checkSupposedTitleIsDeletedOrNot_From_TheTable(),"Supposed title is not in the Table.");
 	    }
 	
 	

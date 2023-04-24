@@ -2,19 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="Chrome"/>
-  <parameter name="offercode" value="trynew20"/>
+  <parameter name="offercode" value="SUMMER50"/>
   <listeners>
     <listener class-name="com.obsqura.testScripts.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.obsqura.testScripts.ManagepageTest">
+      <class name="com.obsqura.testScripts.PushNotificationsTest">
         <methods>
-          <include name="verify_newButton_allowstoAddPageswith_new_page_and_title"/>
           <include name="toInitializeBrowser"/>
           <include name="browserQuit"/>
+          <include name="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked"/>
         </methods>
-      </class> <!-- com.obsqura.testScripts.ManagepageTest -->
+      </class> <!-- com.obsqura.testScripts.PushNotificationsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

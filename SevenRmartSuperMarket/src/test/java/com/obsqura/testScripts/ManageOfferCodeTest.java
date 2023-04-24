@@ -8,6 +8,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.obsqura.pages.ManageOfferCodePage;
+import com.obsqura.retry.Retry;
 
 import utilities.ExcelUtility;
 
@@ -15,7 +16,7 @@ public class ManageOfferCodeTest extends Base {
 	public  ManageOfferCodePage manageOfferCodePage;
 	@Test(retryAnalyzer = Retry.class)
 	@Parameters({"offercode"})
-	public void verify_seraching_With_Offercode_Shows_Corressponding_Details(String offercode) throws IOException {
+	public void verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details(String offercode) throws IOException {
 		manageOfferCodePage=new ManageOfferCodePage(driver);
 		manageOfferCodePage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
 		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
