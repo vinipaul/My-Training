@@ -85,7 +85,7 @@ public class ManageSliderPage {
 		return this;
 	}
 	public void fileUpload() {
-		WaitUtility.waitForElementClickable(driver, chooseFileButton);
+		WaitUtility.waitForvisibilityOfElement(driver, chooseFileButton);
 		chooseFileButton.sendKeys("C:\\Users\\Probook15-650\\Pictures\\Saved Pictures\\smiley.png");
 		WaitUtility.waitForvisibilityOfElement(driver, imagePreview);
 		PageUtility.isElementDisplayed(imagePreview);

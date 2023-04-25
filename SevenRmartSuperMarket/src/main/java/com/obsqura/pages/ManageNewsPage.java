@@ -25,6 +25,9 @@ public class ManageNewsPage {
 	@FindBy (xpath = "//textarea[@id='news']") WebElement newTextArea;
 	@FindBy (xpath = "//button[@name='update']") WebElement updateButton;
 	@FindBy (xpath = "//div[contains(@class,'alert alert-success alert-dismissible')]") WebElement successAlert;
+	@FindBy (xpath = "//a[@onclick='click_button(1)']") WebElement newButton;
+	@FindBy (xpath = "//textarea[@id='news']") WebElement newsTextArea;
+	@FindBy (xpath = "//button[@type='submit']") WebElement saveButton;
 	
 By tableValuesby=By.xpath("//tbody//child::tr//child::td");
 	
@@ -81,5 +84,37 @@ By tableValuesby=By.xpath("//tbody//child::tr//child::td");
 			return false;
 		}		
 	}
-	
+	public ManageNewsPage clickOnNewButton() {
+		WaitUtility.waitForElementClickable(driver, newButton);
+		newButton.click();
+		return this;
+	}
+	public ManageNewsPage enterNewNews(String news) {
+		WaitUtility.waitForvisibilityOfElement(driver, newsTextArea);
+		newsTextArea.clear();
+		newTextArea.sendKeys(news);
+		return this;
+	}
+	public ManageNewsPage clickOnSaveButton() {
+		WaitUtility.waitForElementClickable(driver, saveButton);
+		saveButton.click();
+		return this;
+	}
+	public boolean searchInTheTable(String news) {
+		String newsText="";
+		WaitUtility.waitForvisibilityOfElement(driver, successAlert);
+		boolean isAlertDisplayed= PageUtility.isElementDisplayed(successAlert);
+		driver.navigate().back();
+		driver.navigate().back();
+		List<WebElement> columnElements=driver.findElements(tableValuesby);
+		for (WebElement columnElement:columnElements) {
+	    newsText= columnElement.getText();
+	    break;
+		}
+		if(newsText.equalsIgnoreCase(news) && isAlertDisplayed==true)
+			return true;
+		else {
+			return false;
+		}		
+	}
 }

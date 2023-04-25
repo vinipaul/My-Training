@@ -26,4 +26,18 @@ public class ManageNewsTest extends Base {
 		.clickOnUpdateButton();
 		assertTrue(manageNewsPage.checkForUpdates(news),"Updation In the Table Failed");
 	}
+	@Test(retryAnalyzer = Retry.class)
+	public void verify_New_News_Entered_susccessfully_In_The_Table_When_SaveButton_Clicked() throws IOException {
+		manageNewsPage=new ManageNewsPage(driver);
+		manageNewsPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
+		.clickOnSignInButton()
+		.clickOnManageNewsLink()
+		.clickOnNewButton();
+		String news= FakerUtility.fakeCountryName();
+		manageNewsPage.enterNewNews(news)
+		.clickOnSaveButton();
+		assertTrue(manageNewsPage.searchInTheTable(news),"New News entered failed and no successalert message");
+	}
+	
 }

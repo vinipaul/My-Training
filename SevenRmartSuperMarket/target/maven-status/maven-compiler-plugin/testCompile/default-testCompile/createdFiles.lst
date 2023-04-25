@@ -1,8 +1,8 @@
-com\obsqura\testScripts\Base.class
 com\obsqura\testScripts\ManageExpenseTest.class
-com\obsqura\testScripts\LoginTest.class
 com\obsqura\testScripts\ManageSliderTest.class
 com\obsqura\testScripts\ManagepageTest.class
-com\obsqura\testScripts\Listeners.class
 com\obsqura\testScripts\AdminUsersTest.class
 com\obsqura\testScripts\ManageProductTest.class
+com\obsqura\testScripts\Base.class
+com\obsqura\testScripts\LoginTest.class
+com\obsqura\testScripts\Listeners.class

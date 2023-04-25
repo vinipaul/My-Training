@@ -16,7 +16,6 @@ public class PushNotificationsTest extends Base {
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked() throws IOException {
 		pushNotificationsPage=new PushNotificationsPage(driver);
-		//pushNotificationsPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
 		pushNotificationsPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
 		 .enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 		 .clickOnSignInButton()

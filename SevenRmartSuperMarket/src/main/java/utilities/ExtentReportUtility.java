@@ -9,12 +9,12 @@ static ExtentReports extent;
     {
         String path =System.getProperty("user.dir")+"\\extent-reports\\extent-report.html";
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-        reporter.config().setReportName("SevenRMartSuperMarket Automation Results");
+        reporter.config().setReportName("SevenRMart SuperMarket Automation Results");
 		reporter.config().setDocumentTitle("Test Results");
 		extent =new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Tester", "Vini");
-		extent.setSystemInfo("Blog Name", "SevenRmartSuperMarket");
+		extent.setSystemInfo("Blog Name", "SevenRmart SuperMarket");
 		extent.setSystemInfo("purpose", "Online purchase");
 		return extent;
        

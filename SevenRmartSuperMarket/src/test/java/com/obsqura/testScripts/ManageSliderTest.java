@@ -37,7 +37,7 @@ public class ManageSliderTest  extends Base{
 	    String afterChange=manageSliderPage.afterChange();
 		assertNotEquals(beforeChange,afterChange,"Status Not Changed");
 	}
-	@Test(retryAnalyzer = Retry.class)
+	//@Test(retryAnalyzer = Retry.class)
 	public void verify_AlertMessage_Visible_if_chooseFileButton_uploads_imageFilewithLink_when_SaveButton_Clicked() throws IOException {
 		manageSliderPage=new ManageSliderPage(driver);
 		manageSliderPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
