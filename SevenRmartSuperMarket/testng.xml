@@ -17,6 +17,7 @@
       <class name="com.obsqura.testScripts.ManageOfferCodeTest"/>
       <class name="com.obsqura.testScripts.ManageNewsTest"/>
       <class name="com.obsqura.testScripts.PushNotificationsTest"/>
+      <class name="com.obsqura.testScripts.ManagePaymentMethodTest"/>
       <class name="com.obsqura.testScripts.ManageUsersTest"/>
     </classes>
   </test> <!-- Test -->

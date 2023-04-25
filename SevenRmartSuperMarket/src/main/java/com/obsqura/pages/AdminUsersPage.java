@@ -29,6 +29,9 @@ public class AdminUsersPage {
 	@FindBy (xpath = "//input[@id='password']") WebElement newPassword;
 	@FindBy (xpath = "//button[@name='Create']") WebElement newUserSaveButton;
 	@FindBy (xpath = "//div[contains(@class,'alert alert-success alert-dismissible')]") WebElement successAlert;
+	@FindBy (xpath = "//a[@onclick='click_button(2)']") WebElement searchButton;
+	@FindBy (xpath = "//input[@id='un']") WebElement searchusernameTextBox;
+	@FindBy (xpath = "//button[@name='Search']") WebElement searchSubmitButton;
 		
 	By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
 	
@@ -74,6 +77,22 @@ public class AdminUsersPage {
 		newUserSaveButton.click();
 		return this;
 	}
+	public AdminUsersPage clickOnSearchButton() {
+		WaitUtility.waitForElementClickable(driver, searchButton);
+		searchButton.click();
+		return this;
+	}
+	public AdminUsersPage clickOnSearchSubmitButton() {
+		WaitUtility.waitForElementClickable(driver, searchSubmitButton);
+		searchSubmitButton.click();
+		return this;
+	}
+	public AdminUsersPage enterUserNameToSearch(String searchUser) {
+		searchusernameTextBox.clear();
+		WaitUtility.waitForvisibilityOfElement(driver, searchusernameTextBox);
+		searchusernameTextBox.sendKeys(searchUser);
+		return this;
+	}
 	public boolean checkInTtheTable(String newUserName) {
 		String userNameInTheTable="";
 		WaitUtility.waitForvisibilityOfElement(driver, successAlert);
@@ -88,6 +107,31 @@ public class AdminUsersPage {
 		else {
 			return false;
 		}
+	}
+	public boolean searchInTheTable(String searchUser) {
+		String searchUserNameInTheTable="";
+		int flag=0;
+		List<WebElement> columnElements=driver.findElements(TableValuesBy);
+		for (WebElement columnElement:columnElements) {
+			searchUserNameInTheTable= columnElement.getText();
+			if(searchUserNameInTheTable.equalsIgnoreCase(searchUser)) {
+				flag=1;
+				break;
+			}
+		}
+		if(flag==1)
+			return true;
+		else 
+		return false;
+	}
+	public String searchNonExistingUser(String nonExistingUser) {
+		String searchUserNameInTheTable="";
+		List<WebElement> columnElements=driver.findElements(TableValuesBy);
+		for (WebElement columnElement:columnElements) {
+			searchUserNameInTheTable= columnElement.getText();
+			break;
+		}
+		return searchUserNameInTheTable;
 	}
 }
 

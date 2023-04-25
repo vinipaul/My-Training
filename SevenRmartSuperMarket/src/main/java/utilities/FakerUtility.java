@@ -53,7 +53,10 @@ public class FakerUtility {
 		Faker faker=new Faker();
 		return faker.internet().emailAddress();
 	}
-	
+	public static Number fakeNumber(){
+		Faker faker=new Faker();
+		return faker.number().numberBetween(10000,100000);
+	}
 	public static String fakePassword(){
 		Faker faker=new Faker();
 		return faker.internet().password();
