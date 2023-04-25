@@ -28,6 +28,7 @@ public class AdminUsersPage {
 	@FindBy (xpath = "//input[@id='username']") WebElement newUsernameTextBox;
 	@FindBy (xpath = "//input[@id='password']") WebElement newPassword;
 	@FindBy (xpath = "//button[@name='Create']") WebElement newUserSaveButton;
+	@FindBy (xpath = "//div[contains(@class,'alert alert-success alert-dismissible')]") WebElement successAlert;
 		
 	By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
 	
@@ -75,12 +76,14 @@ public class AdminUsersPage {
 	}
 	public boolean checkInTtheTable(String newUserName) {
 		String userNameInTheTable="";
+		WaitUtility.waitForvisibilityOfElement(driver, successAlert);
+		boolean isSuccesAlertDisplayed=PageUtility.isElementDisplayed(successAlert);
 		List<WebElement> columnElements=driver.findElements(TableValuesBy);
 		for (WebElement columnElement:columnElements) {
 		userNameInTheTable= columnElement.getText();
 	    break;
 		}
-		if(newUserName.equalsIgnoreCase(userNameInTheTable))
+		if(newUserName.equalsIgnoreCase(userNameInTheTable) && isSuccesAlertDisplayed==true)
 			return true;
 		else {
 			return false;

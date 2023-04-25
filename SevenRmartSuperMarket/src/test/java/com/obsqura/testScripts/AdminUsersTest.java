@@ -27,7 +27,7 @@ public class AdminUsersTest extends Base {
 		adminUsersPage.enterNewUserName(newUserName)
 		.enterAdminUsersDetails()
 		.clickOnSaveButton();
-		assertTrue(adminUsersPage.checkInTtheTable(newUserName),"New Admin User Details Added Not In The Table");
+		assertTrue(adminUsersPage.checkInTtheTable(newUserName),"New Admin User Details  Not Added  In The Table");
 	}
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_resetButton_BackgroundColor() throws IOException {

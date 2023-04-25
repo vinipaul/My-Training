@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.obsqura.testScripts.PushNotificationsTest">
+      <class name="com.obsqura.testScripts.AdminUsersTest">
         <methods>
           <include name="toInitializeBrowser"/>
           <include name="browserQuit"/>
-          <include name="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked"/>
+          <include name="verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked"/>
         </methods>
-      </class> <!-- com.obsqura.testScripts.PushNotificationsTest -->
+      </class> <!-- com.obsqura.testScripts.AdminUsersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -17,26 +17,16 @@ ExtentTest test;
 ExtentReports extent=ExtentReportUtility.createExtentReports();
 ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
 
-
-
 public void onTestStart(ITestResult result) {
-// TODO Auto-generated method stub
 ITestListener.super.onTestStart(result);
 test =extent.createTest(result.getMethod().getMethodName());
 extentTest.set(test);
-
 }
-
 public void onTestSuccess(ITestResult result) {
-// TODO Auto-generated method stub
 ITestListener.super.onTestSuccess(result);
 extentTest.get().log(Status.PASS, "Test Passed");
-
-
 }
-
 public void onTestFailure(ITestResult result) {
-// TODO Auto-generated method stub
 ITestListener.super.onTestFailure(result);
 extentTest.get().log(Status.FAIL, "Test Failed");
 extentTest.get().fail(result.getThrowable());

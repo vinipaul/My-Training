@@ -1,7 +1,6 @@
 package com.obsqura.testScripts;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
@@ -39,9 +38,14 @@ public class LoginTest extends Base {
 		assertEquals(expectedTextAlignment,actualTextAlignment,"Sign In Button text alignment expected center but found "+actualTextAlignment);
 		}
 	@Test(retryAnalyzer = Retry.class)
-	public void verify_RememberMe_CheckBox_Is_Selected() {
+	public void verify_logout_from_the_Session_is_Possible_when_LogoutButton_Clicked() throws IOException {
 		loginPage =new LoginPage(driver);
-		boolean actualResult=loginPage.isRemembermeCheckboxisSelected();
-		assertFalse(actualResult,"Rememeber me checkbox is already Selected");
+		loginPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.clickOnSignInButton()
+		.clickOnAdmin()
+		.clickOnLogoutButton();
+		assertTrue(loginPage.checkLogoutOrNot(),"Logout Failed");
 	}
+	
 }

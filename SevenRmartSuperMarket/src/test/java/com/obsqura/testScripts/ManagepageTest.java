@@ -41,8 +41,7 @@ public void verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPag
 	  .toentertitletoSearch(searchTitle)
 	  .clickOnListPageSearchButton();
 	  assertTrue(managePagesPage.toKnowResult(),"Result found");
-	  
-}
+	  }
 @Test(priority = 3, retryAnalyzer = Retry.class)
 public void verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage() throws IOException{
 	  managePagesPage=new ManagePagesPage(driver); 
@@ -55,6 +54,5 @@ public void verify_searchButton_shows_Corresponding_Result_When_search_an_Existi
 	  .toentertitletoSearch(searchTitle)
 	  .clickOnListPageSearchButton();
 	  assertTrue(managePagesPage.searchInTheTable(searchTitle),searchTitle +" is not in the Table");
-	  
-}
+	  }
 }

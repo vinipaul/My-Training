@@ -1,7 +1,5 @@
 package com.obsqura.pages;
 
-import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +24,11 @@ public class ManageSliderPage {
 	@FindBy (xpath = "//div[@class='col-sm-6']//h1[text()]") WebElement listSlidersPageName;
 	@FindBy (xpath = "(//a[@role='button'])[1]") WebElement statusButton;
 	@FindBy (xpath = "//div[starts-with(@class,'alert alert-success alert-dismissible')]") WebElement statusAlert;
+	@FindBy (xpath = "//input[@id='main_img']") WebElement chooseFileButton;
+	@FindBy (xpath = "//input[@id='link']") WebElement linkTextBox;
+	@FindBy (xpath = "//div[@id='imagePreview']") WebElement imagePreview;
+	@FindBy (xpath = "//div[contains(@class,'alert alert-success alert-dismissible')]") WebElement successAlert;
+
 	
 	public ManageSliderPage enterUserName(String username) {
 		WaitUtility.waitForvisibilityOfElement(driver, usernameTextBox);
@@ -76,5 +79,20 @@ public class ManageSliderPage {
 		String statusAfterChanging= PageUtility.getElementText(statusButton);
 		return statusAfterChanging;
 	}
-	
+	public  ManageSliderPage enterLink() {
+		WaitUtility.waitForvisibilityOfElement(driver, linkTextBox);
+		linkTextBox.sendKeys("https://www.google.com/");
+		return this;
+	}
+	public void fileUpload() {
+		WaitUtility.waitForElementClickable(driver, chooseFileButton);
+		chooseFileButton.sendKeys("C:\\Users\\Probook15-650\\Pictures\\Saved Pictures\\smiley.png");
+		WaitUtility.waitForvisibilityOfElement(driver, imagePreview);
+		PageUtility.isElementDisplayed(imagePreview);
+		chooseFileButton.submit();
+	}
+	public boolean checkforAlertMessage() {
+		WaitUtility.waitForvisibilityOfElement(driver,successAlert);
+		return PageUtility.isElementDisplayed(successAlert);
+	}
 }

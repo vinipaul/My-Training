@@ -2,6 +2,7 @@ package com.obsqura.testScripts;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
@@ -35,5 +36,17 @@ public class ManageSliderTest  extends Base{
 	    String beforeChange= manageSliderPage.beforeChange();
 	    String afterChange=manageSliderPage.afterChange();
 		assertNotEquals(beforeChange,afterChange,"Status Not Changed");
+	}
+	@Test(retryAnalyzer = Retry.class)
+	public void verify_AlertMessage_Visible_if_chooseFileButton_uploads_imageFilewithLink_when_SaveButton_Clicked() throws IOException {
+		manageSliderPage=new ManageSliderPage(driver);
+		manageSliderPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		.clickOnSignInButton()
+	    .clickOnManageSliderLink()
+	    .clickonNewButton()
+	    .enterLink()
+	    .fileUpload();
+		assertTrue(manageSliderPage.checkforAlertMessage(),"File not uploaded");
 	}
 }
