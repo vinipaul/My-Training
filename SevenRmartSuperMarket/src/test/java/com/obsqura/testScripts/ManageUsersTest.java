@@ -15,9 +15,9 @@ public class ManageUsersTest extends Base{
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_corresponding_UserDetails_shown_When_Search_An_Existing_User() throws IOException {
 		manageUsersPage=new ManageUsersPage(driver);
-		String username=ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageUsers_Page");
-		manageUsersPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		String username=ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"ManageUsers_Page");
+		manageUsersPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 		.clickOnSignInButton()
 		.clickOnManageUsersLink()
 		.clickonSearchButton()

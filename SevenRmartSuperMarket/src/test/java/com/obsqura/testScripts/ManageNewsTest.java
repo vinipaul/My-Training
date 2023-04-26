@@ -16,8 +16,8 @@ public class ManageNewsTest extends Base {
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_newsField_Is_Editable_when_Edit_Icon_Clicked() throws IOException {
 		manageNewsPage=new ManageNewsPage(driver);
-		manageNewsPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		manageNewsPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 		.clickOnSignInButton()
 		.clickOnManageNewsLink()
 		.clickOnEditIcon();

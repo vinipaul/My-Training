@@ -32,7 +32,7 @@ public class LoginTest extends Base {
 		}
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_SignIn_Button_Text_Alignment_Is_Center() throws IOException {
-		String expectedTextAlignment=ExcelUtility.getString(2, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login");
+		String expectedTextAlignment=ExcelUtility.getString(2, 0,constants.Constants.FILEPATH,"login");
 		loginPage=new LoginPage(driver);
 		String actualTextAlignment=loginPage.signInButtonTextAlignment();
 		assertEquals(expectedTextAlignment,actualTextAlignment,"Sign In Button text alignment expected center but found "+actualTextAlignment);
@@ -40,8 +40,8 @@ public class LoginTest extends Base {
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_logout_from_the_Session_is_Possible_when_LogoutButton_Clicked() throws IOException {
 		loginPage =new LoginPage(driver);
-		loginPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		loginPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 		.clickOnSignInButton()
 		.clickOnAdmin()
 		.clickOnLogoutButton();

@@ -19,8 +19,8 @@ public class ManageProductTest extends Base {
 	@Test (groups = {"Regression"},retryAnalyzer = Retry.class)
 	public void verify_nonVegRadioButtonIsSelectable() throws IOException {
 		manageProductPage=new ManageProductPage(driver);
-	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 		.clickOnSignInButton()
 		.clickOnManageProductLink()
 		.clickonNewButton();
@@ -31,10 +31,10 @@ public class ManageProductTest extends Base {
 		}
 	@Test(groups = {"Regression","Sanity"},retryAnalyzer = Retry.class)
 	public void verify_weightUnitDropdownisWorking() throws IOException {
-		String expectedResult=ExcelUtility.getString(0, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManageProduct_Page");
+		String expectedResult=ExcelUtility.getString(0, 0,constants.Constants.FILEPATH,"ManageProduct_Page");
 		manageProductPage=new ManageProductPage(driver);
-	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+	    manageProductPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 		.clickOnSignInButton()
 		.clickOnManageProductLink()
 		.clickonNewButton()

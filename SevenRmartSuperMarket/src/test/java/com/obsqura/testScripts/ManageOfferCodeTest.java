@@ -18,8 +18,8 @@ public class ManageOfferCodeTest extends Base {
 	@Parameters({"offercode"})
 	public void verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details(String offercode) throws IOException {
 		manageOfferCodePage=new ManageOfferCodePage(driver);
-		manageOfferCodePage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+		manageOfferCodePage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 		.clickOnSignInButton()
 		.clickOnManageOfferLink()
 		.clickonSearchButton()

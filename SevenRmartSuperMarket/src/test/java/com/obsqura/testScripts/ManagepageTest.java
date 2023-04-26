@@ -17,8 +17,8 @@ public class ManagepageTest extends Base {
 @Test(priority = 1, retryAnalyzer = Retry.class)
 public void verify_newButton_allowstoAddPageswith_new_page_and_title() throws IOException{
 	 managePagesPage=new ManagePagesPage(driver); 
-	 managePagesPage.enterUserName((ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
-	 .enterPassword((ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login")))
+	 managePagesPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+	 .enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
 	 .clickOnSignInButton()
 	 .clickOnManagePagesLink()
 	 .clickonNewButton();
@@ -27,14 +27,14 @@ public void verify_newButton_allowstoAddPageswith_new_page_and_title() throws IO
 	 managePagesPage.toEnterTitle(title)
 	 .toEnterPage(page)
 	 .clickOnSaveButton();
-	 assertTrue( managePagesPage.checknewlyAddedPageIntheTable(), "New page with title not inserted in the Table");
+	 assertTrue( managePagesPage.checknewlyAddedPageIntheTable(),"New page with title not inserted in the Table");
 }
 @Test(priority = 2, retryAnalyzer = Retry.class)
 public void verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage() throws IOException{
 	  managePagesPage=new ManagePagesPage(driver); 
 	  String searchTitle=FakerUtility.fakeFirstName();
-	  managePagesPage.enterUserName(ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login"))
-	  .enterPassword(ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login"))
+	  managePagesPage.enterUserName(ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login"))
+	  .enterPassword(ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login"))
       .clickOnSignInButton()
 	  .clickOnManagePagesLink()
 	  .clickOnSearchButton()
@@ -45,9 +45,9 @@ public void verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPag
 @Test(priority = 3, retryAnalyzer = Retry.class)
 public void verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage() throws IOException{
 	  managePagesPage=new ManagePagesPage(driver); 
-	  String searchTitle=ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"ManagePages_Page");
-	  managePagesPage.enterUserName(ExcelUtility.getString(1, 0,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login"))
-	  .enterPassword(ExcelUtility.getString(1, 1,System.getProperty("user.dir")+constants.Constants.TESTDATAFILE,"login"))
+	  String searchTitle=ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"ManagePages_Page");
+	  managePagesPage.enterUserName(ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login"))
+	  .enterPassword(ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login"))
       .clickOnSignInButton()
 	  .clickOnManagePagesLink()
 	  .clickOnSearchButton()
