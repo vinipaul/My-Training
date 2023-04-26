@@ -1,5 +1,6 @@
 package com.obsqura.testScripts;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
@@ -27,4 +28,15 @@ public class ManageOfferCodeTest extends Base {
 		.clickonSearchSubmitButton();
 		assertTrue(manageOfferCodePage.searchInTheTable(offercode),"Given OfferCode is not existing");
 		}
+	@Test(retryAnalyzer = Retry.class)
+	@Parameters({"expectedrawCount"})
+	public void verify_Number_Of_Available_OfferCodes_InTheTable(int expectedrawCount ) throws IOException {
+		manageOfferCodePage=new ManageOfferCodePage(driver);
+		manageOfferCodePage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
+		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
+		.clickOnSignInButton()
+		.clickOnManageOfferLink();
+		int actualrowcount= manageOfferCodePage.toFindcountOfOffercodes();
+		assertEquals(expectedrawCount, actualrowcount,"Row count is not "+expectedrawCount);
+	}
 }

@@ -27,6 +27,7 @@ public class ManageOfferCodePage {
 	@FindBy (xpath = "//tbody//child::tr") WebElement foundofferCode;
 	
 	By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
+	By tableRawsBy=By.xpath("//tbody//child::tr");
 	
 	public ManageOfferCodePage enterUserName(String username) {
 		WaitUtility.waitForvisibilityOfElement(driver, usernameTextBox);
@@ -77,4 +78,11 @@ public class ManageOfferCodePage {
 			return false;
 		}		
 	}
+	public int toFindcountOfOffercodes() {
+		WaitUtility.waitForPresenceOfAllElementsLocated(driver, tableRawsBy);
+		List<WebElement> rowsinTable= driver.findElements(tableRawsBy);
+		int actualrowcount= rowsinTable.size();
+		return actualrowcount;
+	}
+	
 }
