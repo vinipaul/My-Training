@@ -28,6 +28,9 @@ public class ManageNewsPage {
 	@FindBy (xpath = "//a[@onclick='click_button(1)']") WebElement newButton;
 	@FindBy (xpath = "//textarea[@id='news']") WebElement newsTextArea;
 	@FindBy (xpath = "//button[@type='submit']") WebElement saveButton;
+	@FindBy (xpath = "//a[@onclick='click_button(2)']") WebElement searchButton;
+	@FindBy (xpath = "//input[@placeholder='Title']") WebElement newsTextBox;
+	@FindBy (xpath = "//button[@type='submit']") WebElement searchSubmitButton;
 	
 By tableValuesby=By.xpath("//tbody//child::tr//child::td");
 	
@@ -89,7 +92,7 @@ By tableValuesby=By.xpath("//tbody//child::tr//child::td");
 		newButton.click();
 		return this;
 	}
-	public ManageNewsPage enterNewNews(String news) {
+	public ManageNewsPage enterNews(String news) {
 		WaitUtility.waitForvisibilityOfElement(driver, newsTextArea);
 		newsTextArea.clear();
 		newTextArea.sendKeys(news);
@@ -116,5 +119,33 @@ By tableValuesby=By.xpath("//tbody//child::tr//child::td");
 		else {
 			return false;
 		}		
+	}
+	public ManageNewsPage clickOnSearchButton() {
+		WaitUtility.waitForElementClickable(driver,searchButton);
+		searchButton.click();
+		return this;
+	}
+	public ManageNewsPage clickOnSearchSubmitButton() {
+		WaitUtility.waitForElementClickable(driver,searchSubmitButton);
+		searchSubmitButton.click();
+		return this;
+	}
+	public boolean toKnowResult(String news) {
+		String newsText="";
+		List<WebElement> columnElements=driver.findElements(tableValuesby);
+		for (WebElement columnElement:columnElements) {
+	    newsText= columnElement.getText();
+	    break;
+		}
+		if(newsText.equalsIgnoreCase(news) )
+			return true;
+		else {
+			return false;
+		}		
+	}
+	public ManageNewsPage enterNewstoSearch(String news) {
+		WaitUtility.waitForvisibilityOfElement(driver,newsTextBox);
+		newsTextBox.sendKeys(news);
+		return this;
 	}
 }

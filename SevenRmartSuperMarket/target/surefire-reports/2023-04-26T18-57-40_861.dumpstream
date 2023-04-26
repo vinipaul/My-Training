@@ -1,0 +1,4 @@
+# Created at 2023-04-26T18:57:42.116
+Boot Manifest-JAR contains absolute paths in classpath 'F:\vini java\SevenRmartSuperMarket\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

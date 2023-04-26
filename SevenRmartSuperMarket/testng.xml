@@ -9,7 +9,7 @@
   
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.obsqura.testScripts.AdminUsersTest"/>
+   	  <class name="com.obsqura.testScripts.AdminUsersTest"/>
       <class name="com.obsqura.testScripts.LoginTest"/>
       <class name="com.obsqura.testScripts.ManagepageTest"/>
       <class name="com.obsqura.testScripts.ManageSliderTest"/>
@@ -19,6 +19,9 @@
       <class name="com.obsqura.testScripts.PushNotificationsTest"/>
       <class name="com.obsqura.testScripts.ManagePaymentMethodTest"/>
       <class name="com.obsqura.testScripts.ManageUsersTest"/>
+      <class name="com.obsqura.testScripts.ManageDeliveryBoyTest"/>
+      <class name="com.obsqura.testScripts.ManageLocationTest"/>
+      <class name="com.obsqura.testScripts.ManageProductTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -7,10 +7,10 @@
   <parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.obsqura.testScripts.ManageProductTest">
+      <class name="com.obsqura.testScripts.ManageNewsTest">
       <methods>
-		  <include name="verify_nonVegRadioButtonIsSelectable"/>
-		  <include name="verify_weightUnitDropdownisWorking"/>
+		  <include name="verify_newsField_Is_Editable_when_Edit_Icon_Clicked"/>
+		  <include name="verify_New_News_Entered_susccessfully_In_The_Table_When_SaveButton_Clicked"/>
 	  </methods>
       </class>
     </classes>

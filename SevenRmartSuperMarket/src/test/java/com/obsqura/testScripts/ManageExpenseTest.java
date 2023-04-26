@@ -15,7 +15,7 @@ import utilities.ExcelUtility;
 public class ManageExpenseTest  extends Base{
 	ManageExpensePage manageExpensePage;
 	
-	@Test (groups = {"Regression"},retryAnalyzer =Retry.class)
+	@Test (groups = {"Regression","Sanity"},retryAnalyzer =Retry.class)
 	public void verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked() throws IOException{
 		manageExpensePage=new ManageExpensePage(driver);
 		String expectedText=ExcelUtility.getString(0, 0,constants.Constants.FILEPATH,"ManageExpense_Page");
