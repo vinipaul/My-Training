@@ -10,19 +10,18 @@ import com.obsqura.pages.ManageUsersPage;
 import com.obsqura.retry.Retry;
 
 import utilities.ExcelUtility;
-public class ManageUsersTest extends Base{
+
+public class ManageUsersTest extends Base {
 	ManageUsersPage manageUsersPage;
+
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_corresponding_UserDetails_shown_When_Search_An_Existing_User() throws IOException {
-		manageUsersPage=new ManageUsersPage(driver);
-		String username=ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"ManageUsers_Page");
-		manageUsersPage.enterUserName((ExcelUtility.getString(1, 0,constants.Constants.FILEPATH,"login")))
-		.enterPassword((ExcelUtility.getString(1, 1,constants.Constants.FILEPATH,"login")))
-		.clickOnSignInButton()
-		.clickOnManageUsersLink()
-		.clickonSearchButton()
-		.enterName(username)
-		.clickonSearchSubmitButton();
-		assertTrue(manageUsersPage.searchInTtheTable(username),"Table does not contain "+username);
+		manageUsersPage = new ManageUsersPage(driver);
+		String username = ExcelUtility.getString(1, 0, constants.Constants.FILEPATH, "ManageUsers_Page");
+		manageUsersPage.enterUserName((ExcelUtility.getString(1, 0, constants.Constants.FILEPATH, "login")))
+				.enterPassword((ExcelUtility.getString(1, 1, constants.Constants.FILEPATH, "login")))
+				.clickOnSignInButton().clickOnManageUsersLink().clickonSearchButton().enterName(username)
+				.clickonSearchSubmitButton();
+		assertTrue(manageUsersPage.searchInTtheTable(username), "Table does not contain " + username);
 	}
 }

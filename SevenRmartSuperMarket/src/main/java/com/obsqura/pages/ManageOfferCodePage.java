@@ -25,6 +25,8 @@ public class ManageOfferCodePage {
 	@FindBy (xpath = "//input[@placeholder='Offer Code']") WebElement offercodeTextBox;
 	@FindBy (xpath = "//button[@type='submit']") WebElement searchSubmitButton;
 	@FindBy (xpath = "//tbody//child::tr") WebElement foundofferCode;
+	@FindBy (xpath = "//p[text()='Manage Offer Code']//preceding-sibling::h3") WebElement homeOfferCodeCount;
+	@FindBy (xpath = "//li[@class='breadcrumb-item']//child::a[@href='https://groceryapp.uniqassosiates.com/admin/home']")  WebElement homeLink;
 	
 	By TableValuesBy=By.xpath("//tbody//child::tr//child::td");
 	By tableRawsBy=By.xpath("//tbody//child::tr");
@@ -78,11 +80,20 @@ public class ManageOfferCodePage {
 			return false;
 		}		
 	}
-	public int toFindcountOfOffercodes() {
+	public String toFindcountOfOffercodes() {
 		WaitUtility.waitForPresenceOfAllElementsLocated(driver, tableRawsBy);
 		List<WebElement> rowsinTable= driver.findElements(tableRawsBy);
-		int actualrowcount= rowsinTable.size();
+		String actualrowcount=String.valueOf(rowsinTable.size());
 		return actualrowcount;
+	}
+	public ManageOfferCodePage clickOnHomeLink() {
+		WaitUtility.waitForElementClickable(driver, homeLink);
+		PageUtility.clickOnElement(homeLink);
+		return this;
+	}
+	public String findHomeOfferCodeCount() {
+		WaitUtility.waitForvisibilityOfElement(driver, homeOfferCodeCount);
+		return homeOfferCodeCount.getText();
 	}
 	
 }

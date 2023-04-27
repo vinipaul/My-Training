@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="218.52" tests="28" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="272.319" tests="30" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Probook15-650\AppData\Local\Temp\surefire8803200843191571558\surefirebooter2564545908502721350.jar C:\Users\Probook15-650\AppData\Local\Temp\surefire8803200843191571558 2023-04-26T18-57-40_861-jvmRun1 surefire7512177181007463387tmp surefire_02286485991455683929tmp"/>
+    <property name="sun.java.command" value="C:\Users\Probook15-650\AppData\Local\Temp\surefire6784556961865844798\surefirebooter8622595704077471016.jar C:\Users\Probook15-650\AppData\Local\Temp\surefire6784556961865844798 2023-04-27T02-28-54_691-jvmRun1 surefire7930036223106928947tmp surefire_08894335252221970190tmp"/>
     <property name="surefire.test.class.path" value="F:\vini java\SevenRmartSuperMarket\target\test-classes;F:\vini java\SevenRmartSuperMarket\target\classes;C:\Users\Probook15-650\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.1\webdrivermanager-5.1.1.jar;C:\Users\Probook15-650\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Probook15-650\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\Probook15-650\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Probook15-650\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Probook15-650\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Probook15-650\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Probook15-650\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Probook15-650\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Probook15-650\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Probook15-650\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Probook15-650\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Probook15-650\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Probook15-650\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Probook15-650\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Probook15-650\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Probook15-650\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Probook15-650\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-java\4.8.3\selenium-java-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-api\4.8.3\selenium-api-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.8.3\selenium-chrome-driver-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Probook15-650\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Probook15-650\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Probook15-650\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Probook15-650\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Probook15-650\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Probook15-650\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Probook15-650\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Probook15-650\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.8.3\selenium-chromium-driver-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-json\4.8.3\selenium-json-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.8.3\selenium-manager-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v109\4.8.3\selenium-devtools-v109-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.8.3\selenium-devtools-v110-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.8.3\selenium-devtools-v111-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.8.3\selenium-devtools-v85-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.8.3\selenium-edge-driver-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.8.3\selenium-firefox-driver-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-http\4.8.3\selenium-http-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.8.3\selenium-ie-driver-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.8.3\selenium-remote-driver-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-buffer\4.1.90.Final\netty-buffer-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-codec-http\4.1.90.Final\netty-codec-http-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-codec\4.1.90.Final\netty-codec-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-handler\4.1.90.Final\netty-handler-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-common\4.1.90.Final\netty-common-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.90.Final\netty-transport-classes-epoll-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.90.Final\netty-transport-classes-kqueue-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport-native-epoll\4.1.90.Final\netty-transport-native-epoll-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.90.Final\netty-transport-native-kqueue-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.90.Final\netty-transport-native-unix-common-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport\4.1.90.Final\netty-transport-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-resolver\4.1.90.Final\netty-resolver-4.1.90.Final.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-api\1.24.0\opentelemetry-api-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-context\1.24.0\opentelemetry-context-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.24.0\opentelemetry-exporter-logging-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.24.0\opentelemetry-sdk-metrics-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.24.0-alpha\opentelemetry-sdk-logs-1.24.0-alpha.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.24.0-alpha\opentelemetry-api-logs-1.24.0-alpha.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.24.0-alpha\opentelemetry-api-events-1.24.0-alpha.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.24.0\opentelemetry-sdk-common-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.24.0\opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.24.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.24.0\opentelemetry-sdk-trace-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.24.0\opentelemetry-sdk-1.24.0.jar;C:\Users\Probook15-650\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.24.0-alpha\opentelemetry-semconv-1.24.0-alpha.jar;C:\Users\Probook15-650\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Probook15-650\.m2\repository\net\bytebuddy\byte-buddy\1.14.2\byte-buddy-1.14.2.jar;C:\Users\Probook15-650\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Probook15-650\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Probook15-650\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Probook15-650\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Probook15-650\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Probook15-650\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Probook15-650\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.8.3\selenium-safari-driver-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\seleniumhq\selenium\selenium-support\4.8.3\selenium-support-4.8.3.jar;C:\Users\Probook15-650\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\Probook15-650\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Probook15-650\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Probook15-650\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Probook15-650\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Probook15-650\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Probook15-650\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\Probook15-650\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\Probook15-650\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\Probook15-650\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Probook15-650\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Probook15-650\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\Probook15-650\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\Probook15-650\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\Probook15-650\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\Probook15-650\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\Probook15-650\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\Probook15-650\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\Probook15-650\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\Probook15-650\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\Probook15-650\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Probook15-650\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\Probook15-650\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\Probook15-650\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Probook15-650\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Probook15-650\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Probook15-650\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Probook15-650\.m2\repository\com\aventstack\extentreports\4.1.7\extentreports-4.1.7.jar;C:\Users\Probook15-650\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\Probook15-650\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Probook15-650\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Probook15-650\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Probook15-650\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Probook15-650\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\Probook15-650\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\Probook15-650\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;C:\Users\Probook15-650\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Probook15-650\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Probook15-650\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\Probook15-650\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\Probook15-650\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Probook15-650\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Probook15-650"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Probook15-650\AppData\Local\Temp\surefire8803200843191571558\surefirebooter2564545908502721350.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Probook15-650\AppData\Local\Temp\surefire6784556961865844798\surefirebooter8622595704077471016.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,258 +60,276 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked" classname="com.obsqura.testScripts.AdminUsersTest" time="5.132">
+  <testcase name="verify_New_AdminUser_Details_Added_In_The_Table_When_SaveButton_Clicked" classname="com.obsqura.testScripts.AdminUsersTest" time="5.462">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 46964
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 35986
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:57:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:29:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Resul_Not_Found_AppearsIn_The_Table_When_search_non_ExistingUser" classname="com.obsqura.testScripts.AdminUsersTest" time="2.302">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 9080
+  <testcase name="verify_Resul_Not_Found_AppearsIn_The_Table_When_search_non_ExistingUser" classname="com.obsqura.testScripts.AdminUsersTest" time="2.621">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 5559
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:29:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_resetButton_BackgroundColor" classname="com.obsqura.testScripts.AdminUsersTest" time="1.574">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 12390
+  <testcase name="verify_resetButton_BackgroundColor" classname="com.obsqura.testScripts.AdminUsersTest" time="2.25">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 37524
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:29:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingUser" classname="com.obsqura.testScripts.AdminUsersTest" time="2.133">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 46155
+  <testcase name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingUser" classname="com.obsqura.testScripts.AdminUsersTest" time="2.726">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 9067
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:29:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_SignIn_Button_Text_Alignment_Is_Center" classname="com.obsqura.testScripts.LoginTest" time="0.072">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 35302
+  <testcase name="verify_SignIn_Button_Text_Alignment_Is_Center" classname="com.obsqura.testScripts.LoginTest" time="0.079">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 45409
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:29:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_login_with_Credentials[admin, admin](1)" classname="com.obsqura.testScripts.LoginTest" time="1.175">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 48911
+  <testcase name="verify_login_with_Credentials[admin, admin](1)" classname="com.obsqura.testScripts.LoginTest" time="0.938">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 15720
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:29:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_login_with_Credentials[Admin, admin](2)" classname="com.obsqura.testScripts.LoginTest" time="0.91">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 28295
+  <testcase name="verify_login_with_Credentials[Admin, admin](2)" classname="com.obsqura.testScripts.LoginTest" time="0.911">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 14236
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:29:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_logout_from_the_Session_is_Possible_when_LogoutButton_Clicked" classname="com.obsqura.testScripts.LoginTest" time="1.576">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 48475
+  <testcase name="verify_logout_from_the_Session_is_Possible_when_LogoutButton_Clicked" classname="com.obsqura.testScripts.LoginTest" time="2.2">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 2271
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:30:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_newButton_allowstoAddPageswith_new_page_and_title" classname="com.obsqura.testScripts.ManagepageTest" time="3.78">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 28534
+  <testcase name="verify_newButton_allowstoAddPageswith_new_page_and_title" classname="com.obsqura.testScripts.ManagepageTest" time="3.916">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 11666
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:30:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage" classname="com.obsqura.testScripts.ManagepageTest" time="2.163">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 26406
+  <testcase name="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingPage" classname="com.obsqura.testScripts.ManagepageTest" time="2.105">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 8996
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:58:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:30:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage" classname="com.obsqura.testScripts.ManagepageTest" time="2.203">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 11064
+  <testcase name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingPage" classname="com.obsqura.testScripts.ManagepageTest" time="3.044">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 38605
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:30:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_AlertMessage_Visible_if_chooseFileButton_uploads_imageFilewithLink_when_SaveButton_Clicked" classname="com.obsqura.testScripts.ManageSliderTest" time="3.188">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 4159
+  <testcase name="verify_AlertMessage_Visible_if_chooseFileButton_uploads_imageFilewithLink_when_SaveButton_Clicked" classname="com.obsqura.testScripts.ManageSliderTest" time="3.264">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 14869
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:30:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Status_Changed_Successfully_in_The_Table" classname="com.obsqura.testScripts.ManageSliderTest" time="2.189">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 36573
+  <testcase name="verify_Status_Changed_Successfully_in_The_Table" classname="com.obsqura.testScripts.ManageSliderTest" time="2.22">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 34933
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:30:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_manageSliderLink_navigatedto_ListSliderPage" classname="com.obsqura.testScripts.ManageSliderTest" time="1.485">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 15826
+  <testcase name="verify_manageSliderLink_navigatedto_ListSliderPage" classname="com.obsqura.testScripts.ManageSliderTest" time="2.333">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 47849
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:30:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked" classname="com.obsqura.testScripts.ManageExpenseTest" time="2.139">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 11509
+  <testcase name="verify_Cofirmation_AlertboxText_when_DeleteButton_Clicked" classname="com.obsqura.testScripts.ManageExpenseTest" time="1.689">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 4290
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:31:07 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion" classname="com.obsqura.testScripts.ManageExpenseTest" time="1.788">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 10949
+  <testcase name="verify_Cofirmation_Alertbox_Cancel_Click_Disallow_Deletion" classname="com.obsqura.testScripts.ManageExpenseTest" time="1.912">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 35018
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:31:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details[SUMMER50](1)" classname="com.obsqura.testScripts.ManageOfferCodeTest" time="2.442">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 27172
+  <testcase name="verify_Number_Of_Available_OfferCodes_InTheTable[17](1)" classname="com.obsqura.testScripts.ManageOfferCodeTest" time="1.747">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 21349
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:31:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_New_News_Entered_susccessfully_In_The_Table_When_SaveButton_Clicked" classname="com.obsqura.testScripts.ManageNewsTest" time="3.326">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 14607
+  <testcase name="verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details[SUMMER50](1)" classname="com.obsqura.testScripts.ManageOfferCodeTest" time="2.166">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 29002
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 6:59:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:31:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_newsField_Is_Editable_when_Edit_Icon_Clicked" classname="com.obsqura.testScripts.ManageNewsTest" time="2.794">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 32578
+  <testcase name="verify_New_News_Entered_susccessfully_In_The_Table_When_SaveButton_Clicked" classname="com.obsqura.testScripts.ManageNewsTest" time="4.898">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 9657
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:31:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingNews" classname="com.obsqura.testScripts.ManageNewsTest" time="2.166">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 48636
+  <testcase name="verify_newsField_Is_Editable_when_Edit_Icon_Clicked" classname="com.obsqura.testScripts.ManageNewsTest" time="2.843">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 32629
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:31:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingNews" classname="com.obsqura.testScripts.ManageNewsTest" time="1.996">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 26246
+  <testcase name="verify_searchButton_shows_Corresponding_Result_When_search_an_ExistingNews" classname="com.obsqura.testScripts.ManageNewsTest" time="2.903">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 4680
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:31:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked" classname="com.obsqura.testScripts.PushNotificationsTest" time="2.484">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 31582
+  <testcase name="verify_searchButton_shows_ResultNotFound_When_Search_Non_ExistingNews" classname="com.obsqura.testScripts.ManageNewsTest" time="1.923">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 35811
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:32:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_newsField_Is_Editable_when_Edit_Icon_Clicked" classname="com.obsqura.testScripts.ManagePaymentMethodTest" time="2.734">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 27164
+  <testcase name="verify_Send_successfully_AlertMessage_Appears_When_Send_Button_Clicked" classname="com.obsqura.testScripts.PushNotificationsTest" time="2.854">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 16176
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:32:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_corresponding_UserDetails_shown_When_Search_An_Existing_User" classname="com.obsqura.testScripts.ManageUsersTest" time="2.1">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 40324
+  <testcase name="verify_newsField_Is_Editable_when_Edit_Icon_Clicked" classname="com.obsqura.testScripts.ManagePaymentMethodTest" time="3.042">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 42927
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:32:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_password_shown_under_The_Table_Raw_when_passwordIcon_Clicked" classname="com.obsqura.testScripts.ManageDeliveryBoyTest" time="1.59">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 2089
+  <testcase name="verify_corresponding_UserDetails_shown_When_Search_An_Existing_User" classname="com.obsqura.testScripts.ManageUsersTest" time="2.213">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 20438
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:32:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_Location_Added_in_the_Table_when_save_button_clicked" classname="com.obsqura.testScripts.ManageLocationTest" time="3.85">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 20157
+  <testcase name="verify_password_shown_under_The_Table_Raw_when_passwordIcon_Clicked" classname="com.obsqura.testScripts.ManageDeliveryBoyTest" time="1.684">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 44144
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:00:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:32:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_nonVegRadioButtonIsSelectable" classname="com.obsqura.testScripts.ManageProductTest" time="2.376">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 36573
+  <testcase name="verify_Location_Added_in_the_Table_when_save_button_clicked" classname="com.obsqura.testScripts.ManageLocationTest" time="4.404">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 5471
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:01:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:32:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="verify_weightUnitDropdownisWorking" classname="com.obsqura.testScripts.ManageProductTest" time="2.808">
-    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 29682
+  <testcase name="verify_nonVegRadioButtonIsSelectable" classname="com.obsqura.testScripts.ManageProductTest" time="3.077">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 13788
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 26, 2023 7:01:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 27, 2023 2:33:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="verify_weightUnitDropdownisWorking" classname="com.obsqura.testScripts.ManageProductTest" time="2.95">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 29322
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 27, 2023 2:33:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="verify_Countof_Available_Categories_InTheTable" classname="com.obsqura.testScripts.CategoryTest" time="1.848">
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 37896
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 27, 2023 2:33:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
 ]]></system-err>
   </testcase>

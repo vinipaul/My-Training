@@ -5,12 +5,11 @@
 		<listener class-name="com.obsqura.testScripts.Listeners"></listener>
 	</listeners>
   <parameter name="browser" value="Chrome"></parameter>
-  <parameter name="offercode" value="SUMMER50"></parameter>
-  <parameter name="expectedrawCount" value="17"></parameter>
+  <parameter name="offercode" value="TRYNEW20"></parameter>
   
-  <test thread-count="5" name="Test">
+   <test thread-count="5" name="Test">
     <classes>
-   	 <class name="com.obsqura.testScripts.AdminUsersTest"/>
+   	  <class name="com.obsqura.testScripts.AdminUsersTest"/>
       <class name="com.obsqura.testScripts.LoginTest"/>
       <class name="com.obsqura.testScripts.ManagepageTest"/>
       <class name="com.obsqura.testScripts.ManageSliderTest"/>
