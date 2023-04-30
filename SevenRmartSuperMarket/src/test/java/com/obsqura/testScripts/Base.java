@@ -37,9 +37,10 @@ public class Base {
 			e.printStackTrace();
 		}
 		if (browser.equalsIgnoreCase("Chrome")) {
-			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(chromeOptions);
+			  ChromeOptions chromeOptions = new ChromeOptions();
+			  chromeOptions.addArguments("--remote-allow-origins=*"); 
+			  driver = new ChromeDriver(chromeOptions);
+			 
 		} else if (browser.equalsIgnoreCase("Edge")) {
 			EdgeOptions edgeOptions = new EdgeOptions();
 			edgeOptions.addArguments("--remote-allow-origins=*");

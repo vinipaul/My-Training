@@ -12,6 +12,7 @@
         <methods>
           <include name="toInitializeBrowser"/>
           <include name="browserQuit"/>
+          <include name="verify_seraching_With_Existing_Offercode_Shows_Corressponding_Details"/>
           <include name="verify_Number_Of_Available_OfferCodes_InTheTable"/>
         </methods>
       </class> <!-- com.obsqura.testScripts.ManageOfferCodeTest -->

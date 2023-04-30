@@ -23,6 +23,7 @@
       <class name="com.obsqura.testScripts.ManageLocationTest"/>
       <class name="com.obsqura.testScripts.ManageProductTest"/>
       <class name="com.obsqura.testScripts.CategoryTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

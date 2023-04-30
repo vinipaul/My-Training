@@ -38,7 +38,7 @@ public class ManageSliderTest extends Base {
 		assertNotEquals(beforeChange, afterChange, "Status Not Changed");
 	}
 
-	//@Test(retryAnalyzer = Retry.class)
+	@Test(retryAnalyzer = Retry.class)
 	public void verify_AlertMessage_Visible_if_chooseFileButton_uploads_imageFilewithLink_when_SaveButton_Clicked()
 			throws IOException {
 		manageSliderPage = new ManageSliderPage(driver);

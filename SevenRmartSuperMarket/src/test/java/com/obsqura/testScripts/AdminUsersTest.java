@@ -52,7 +52,7 @@ public class AdminUsersTest extends Base {
 
 	@Test(retryAnalyzer = Retry.class)
 	public void verify_Resul_Not_Found_AppearsIn_The_Table_When_search_non_ExistingUser() throws IOException {
-		String expectedResult = ".........RESULT NOT FOUND.......";
+		String expectedResult =ExcelUtility.getString(2, 0, constants.Constants.FILEPATH, "AdminUsers_page") ;
 		adminUsersPage = new AdminUsersPage(driver);
 		String nonExistingUser = FakerUtility.fakeStateName();
 		adminUsersPage.enterUserName(ExcelUtility.getString(1, 0, constants.Constants.FILEPATH, "login"))
